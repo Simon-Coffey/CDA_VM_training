@@ -1,0 +1,3628 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<uc-export clientvers="12.1.1+build.9812">
+<FolderStruct>
+<includeExternalObjects>0</includeExternalObjects>
+<FOLD name="UC4.APPLICATIONS" title="">
+<FOLD name="DEFAULT" title="">
+<JOBP id="1010015" link="0" name="RM.DEFAULT.TRAINAPP.TRAIN_WF2"/>
+<JOBP id="1010048" link="0" name="RM.DEFAULT.USECASE.USE_CASE"/>
+<JOBP id="1011007" link="0" name="RM.DEFAULT.TRAINAPP.TRAINWORKFLOW"/>
+<FOLD name="FOLD.NEW.1" title=""/>
+<FOLD name="RM.DEFAULT.TRAINAPP.TRAIN_WF2.NEWFILE." title="">
+<JOBP id="1010016" link="0" name="RM.DEFAULT.TRAINAPP.TRAIN_WF2.NEWFILE"/>
+</FOLD>
+<FOLD name="RM.DEFAULT.TRAINAPP.TRAINWORKFLOW.TRAINFILES." title="">
+<JOBP id="1011009" link="0" name="RM.DEFAULT.TRAINAPP.TRAINWORKFLOW.TRAINFILES"/>
+</FOLD>
+<FOLD name="RM.DEFAULT.TRAINAPP.TRAINWORKFLOW.TRAINWEBAPP." title="">
+<JOBP id="1010006" link="0" name="RM.DEFAULT.TRAINAPP.TRAINWORKFLOW.TRAINWEBAPP"/>
+</FOLD>
+<FOLD name="RM.DEFAULT.USECASE.USE_CASE.SQL_SERVER." title="">
+<JOBP id="1010050" link="0" name="RM.DEFAULT.USECASE.USE_CASE.SQL_SERVER"/>
+</FOLD>
+<FOLD name="RM.DEFAULT.USECASE.USE_CASE.SQL_SERVER.1." title="">
+<JOBP id="1013002" link="0" name="RM.DEFAULT.USECASE.USE_CASE.SQL_SERVER.1"/>
+</FOLD>
+<FOLD name="RM.DEFAULT.USECASE.USE_CASE.USECASEWEBAPP." title="">
+<JOBP id="1010052" link="0" name="RM.DEFAULT.USECASE.USE_CASE.USECASEWEBAPP"/>
+</FOLD>
+<FOLD name="RM.DEFAULT.USECASE.USE_CASE.USECASEWEBAPP.1." title="">
+<JOBP id="1013001" link="0" name="RM.DEFAULT.USECASE.USE_CASE.USECASEWEBAPP.1"/>
+</FOLD>
+<FOLD name="RM.DEFAULT.USECASE.USE_CASE.USECASEWEBAPP.2." title="">
+<JOBP id="1012011" link="0" name="RM.DEFAULT.USECASE.USE_CASE.USECASEWEBAPP.2"/>
+</FOLD>
+</FOLD>
+<FOLD name="TRAINAPP" title=""/>
+</FOLD>
+</FolderStruct>
+<JOBP AllowExternal="1" name="RM.DEFAULT.TRAINAPP.TRAIN_WF2">
+<XHEADER state="1">
+<Title>TRAIN_WF2</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<Active>1</Active>
+<OH_SubType/>
+<CustomAttributes KeyListID="0" dataRequestID="0"/>
+</XHEADER>
+<SYNCREF state="1">
+<Syncs/>
+</SYNCREF>
+<ATTR_JOBP state="1">
+<Queue>CLIENT_QUEUE</Queue>
+<ChildQueue>*OWN</ChildQueue>
+<StartType/>
+<ExtRepDef>1</ExtRepDef>
+<ExtRepAll>0</ExtRepAll>
+<ExtRepNone>0</ExtRepNone>
+<IntAccount/>
+<AutoDeactNo>0</AutoDeactNo>
+<AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
+<AutoDeactErrorFree>1</AutoDeactErrorFree>
+<DeactWhen>ANY_OK</DeactWhen>
+<AutoDeactAlways>0</AutoDeactAlways>
+<DeactDelay>0</DeactDelay>
+<ActAtRun>1</ActAtRun>
+<UC4Priority>0</UC4Priority>
+<PassPriority>0</PassPriority>
+<MaxParallel2>0</MaxParallel2>
+<ReuseHG>1</ReuseHG>
+<MpElse1>1</MpElse1>
+<MpElse2>0</MpElse2>
+<TZ/>
+<RWhen/>
+<RExecute/>
+<JPA_SubType/>
+</ATTR_JOBP>
+<JOBP state="1">
+<JobpStruct mode="design">
+<task Alias="" BranchType="0" Col="1" Lnr="1" OType="&lt;START&gt;" Object="START" ParentAlias="" ParentObject="" Row="1" Text2="">
+<checkpoint RollbackFlag="0" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="0" WElseS="1" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors/>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree/>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<task Alias="" BranchType="0" Col="2" Lnr="2" OType="JOBP" Object="RM.DEFAULT.TRAINAPP.TRAIN_WF2.NEWFILE" ParentAlias="" ParentObject="" Row="1" Text2="">
+<checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="1" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="1" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors>
+<pre BranchType="0" Lnr="1" PreLnr="1" When="ANY_OK" type="container"/>
+</predecessors>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values>
+<row ERTUsage="0" Mod="0" Name="&amp;AGENT#" Value="EXT:agent"/>
+<row ERTUsage="0" Mod="0" Name="&amp;LOGIN#" Value="EXT:@global/login"/>
+<row ERTUsage="0" Mod="0" Name="&amp;OVERWRITE_AGENT#" Value="EXT:/agent_assignment/agent"/>
+<row ERTUsage="0" Mod="0" Name="&amp;OVERWRITE_LOGIN#" Value="EXT:/agent_assignment/login"/>
+<row ERTUsage="0" Mod="0" Name="&amp;TARGET_ID#" Value="EXT:@target/system/id"/>
+</Values>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_ENVIRONMENT_SNAPSHOT_GUID" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_GUID_SEED#" Value=""/>
+</Values>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
+<node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
+</dyntree>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<task Alias="" BranchType="0" Col="4" Lnr="3" OType="&lt;END&gt;" Object="END" ParentAlias="" ParentObject="" Row="1" Text2="">
+<checkpoint RollbackFlag="0" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="1" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors>
+<pre BranchType="0" Lnr="1" PreLnr="2" When="ANY_OK" type="container"/>
+</predecessors>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree/>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<OPTIONS/>
+</JobpStruct>
+</JOBP>
+<RUNTIME state="1">
+<MaxRetCode>0</MaxRetCode>
+<MrcExecute/>
+<MrcElseE>0</MrcElseE>
+<FcstStatus>0| |</FcstStatus>
+<Ert>25</Ert>
+<ErtMethodDef>1</ErtMethodDef>
+<ErtMethodFix>0</ErtMethodFix>
+<ErtFix>0</ErtFix>
+<ErtDynMethod>2|Average</ErtDynMethod>
+<ErtMethodDyn>0</ErtMethodDyn>
+<ErtCnt>0</ErtCnt>
+<ErtCorr>0</ErtCorr>
+<ErtIgn>0</ErtIgn>
+<ErtIgnFlg>0</ErtIgnFlg>
+<ErtMinCnt>0</ErtMinCnt>
+<MrtMethodNone>1</MrtMethodNone>
+<MrtMethodFix>0</MrtMethodFix>
+<MrtFix>0</MrtFix>
+<MrtMethodErt>0</MrtMethodErt>
+<MrtErt>0</MrtErt>
+<MrtMethodDate>0</MrtMethodDate>
+<MrtDays>0</MrtDays>
+<MrtTime>00:00</MrtTime>
+<MrtTZ/>
+<SrtMethodNone>1</SrtMethodNone>
+<SrtMethodFix>0</SrtMethodFix>
+<SrtFix>0</SrtFix>
+<SrtMethodErt>0</SrtMethodErt>
+<SrtErt>0</SrtErt>
+<MrtCancel>0</MrtCancel>
+<MrtExecute>0</MrtExecute>
+<MrtExecuteObj/>
+</RUNTIME>
+<DYNVALUES state="1">
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
+<VALUE state="1">
+<Values>
+<row ERTUsage="0" Name="&amp;UC4RB_ENVIRONMENT_SNAPSHOT_GUID" Value=""/>
+<row ERTUsage="0" Name="&amp;UC4RB_GUID_SEED#" Value=""/>
+</Values>
+<Mode>0</Mode>
+</VALUE>
+</node>
+</dyntree>
+</DYNVALUES>
+<DEPLOYMENT state="1">
+<DeploymentFlag>1</DeploymentFlag>
+<WFTypeA>1</WFTypeA>
+<WFTypeC>0</WFTypeC>
+<AppName>TrainApp</AppName>
+<WFName>TRAIN_WF2</WFName>
+<ComponentName/>
+</DEPLOYMENT>
+<ROLLBACK state="1">
+<RollbackFlag>0</RollbackFlag>
+<CBackupObj/>
+<CRollbackObj/>
+<FBackupPath/>
+<FDeleteBefore>0</FDeleteBefore>
+<FInclSubDirs>0</FInclSubDirs>
+</ROLLBACK>
+<SCRIPT mode="1" state="1">
+<MSCRI><![CDATA[:SET &TIME# = SYS_TIME("HH:MM:SS")
+:SET &DATE# = SYS_DATE("YYYY-MM-DD")
+:PSET &UC4RB_GUID_SEED# = STR_CAT(&DATE#, &TIME#)]]></MSCRI>
+</SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBP>
+<JOBP AllowExternal="1" name="RM.DEFAULT.USECASE.USE_CASE">
+<XHEADER state="1">
+<Title>USE_CASE</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<Active>1</Active>
+<OH_SubType/>
+<CustomAttributes KeyListID="0" dataRequestID="0"/>
+</XHEADER>
+<SYNCREF state="1">
+<Syncs/>
+</SYNCREF>
+<ATTR_JOBP state="1">
+<Queue>CLIENT_QUEUE</Queue>
+<ChildQueue>*OWN</ChildQueue>
+<StartType/>
+<ExtRepDef>1</ExtRepDef>
+<ExtRepAll>0</ExtRepAll>
+<ExtRepNone>0</ExtRepNone>
+<IntAccount/>
+<AutoDeactNo>0</AutoDeactNo>
+<AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
+<AutoDeactErrorFree>1</AutoDeactErrorFree>
+<DeactWhen>ANY_OK</DeactWhen>
+<AutoDeactAlways>0</AutoDeactAlways>
+<DeactDelay>0</DeactDelay>
+<ActAtRun>1</ActAtRun>
+<UC4Priority>0</UC4Priority>
+<PassPriority>0</PassPriority>
+<MaxParallel2>0</MaxParallel2>
+<ReuseHG>1</ReuseHG>
+<MpElse1>1</MpElse1>
+<MpElse2>0</MpElse2>
+<TZ/>
+<RWhen/>
+<RExecute/>
+<JPA_SubType/>
+</ATTR_JOBP>
+<JOBP state="1">
+<JobpStruct mode="design">
+<task Alias="" BranchType="0" Col="1" Lnr="1" OType="&lt;START&gt;" Object="START" ParentAlias="" ParentObject="" Row="1" Text2="">
+<checkpoint RollbackFlag="0" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="0" WElseS="1" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors/>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree/>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<task Alias="" BranchType="0" Col="2" Lnr="2" OType="JOBP" Object="RM.DEFAULT.USECASE.USE_CASE.SQL_SERVER.1" ParentAlias="" ParentObject="" Row="1" Text2="">
+<checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="1" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="1" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors>
+<pre BranchType="0" Lnr="1" PreLnr="1" When="ANY_OK" type="container"/>
+</predecessors>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values>
+<row ERTUsage="0" Mod="0" Name="&amp;AGENT#" Value="EXT:agent"/>
+<row ERTUsage="0" Mod="0" Name="&amp;LOGIN#" Value="EXT:@global/login"/>
+<row ERTUsage="0" Mod="0" Name="&amp;OVERWRITE_AGENT#" Value="EXT:/agent_assignment/agent"/>
+<row ERTUsage="0" Mod="0" Name="&amp;OVERWRITE_LOGIN#" Value="EXT:/agent_assignment/login"/>
+<row ERTUsage="0" Mod="0" Name="&amp;TARGET_ID#" Value="EXT:@target/system/id"/>
+</Values>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_ENVIRONMENT_SNAPSHOT_GUID" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_GUID_SEED#" Value=""/>
+</Values>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
+<node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
+</dyntree>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<task Alias="" BranchType="0" Col="3" Lnr="3" OType="JOBP" Object="RM.DEFAULT.USECASE.USE_CASE.USECASEWEBAPP.2" ParentAlias="" ParentObject="" Row="1" Text2="">
+<checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="1" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="1" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors>
+<pre BranchType="0" Lnr="1" PreLnr="2" When="ANY_OK" type="container"/>
+</predecessors>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values>
+<row ERTUsage="0" Mod="0" Name="&amp;AGENT#" Value="EXT:agent"/>
+<row ERTUsage="0" Mod="0" Name="&amp;LOGIN#" Value="EXT:@global/login"/>
+<row ERTUsage="0" Mod="0" Name="&amp;OVERWRITE_AGENT#" Value="EXT:/agent_assignment/agent"/>
+<row ERTUsage="0" Mod="0" Name="&amp;OVERWRITE_LOGIN#" Value="EXT:/agent_assignment/login"/>
+<row ERTUsage="0" Mod="0" Name="&amp;TARGET_ID#" Value="EXT:@target/system/id"/>
+</Values>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_ENVIRONMENT_SNAPSHOT_GUID" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_GUID_SEED#" Value=""/>
+</Values>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
+<node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
+</dyntree>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<task Alias="" BranchType="0" Col="4" Lnr="4" OType="&lt;END&gt;" Object="END" ParentAlias="" ParentObject="" Row="1" Text2="">
+<checkpoint RollbackFlag="0" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="1" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors>
+<pre BranchType="0" Lnr="1" PreLnr="3" When="ANY_OK" type="container"/>
+</predecessors>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree/>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<OPTIONS/>
+</JobpStruct>
+</JOBP>
+<RUNTIME state="1">
+<MaxRetCode>0</MaxRetCode>
+<MrcExecute/>
+<MrcElseE>0</MrcElseE>
+<FcstStatus>0| |</FcstStatus>
+<Ert>230</Ert>
+<ErtMethodDef>1</ErtMethodDef>
+<ErtMethodFix>0</ErtMethodFix>
+<ErtFix>0</ErtFix>
+<ErtDynMethod>2|Average</ErtDynMethod>
+<ErtMethodDyn>0</ErtMethodDyn>
+<ErtCnt>0</ErtCnt>
+<ErtCorr>0</ErtCorr>
+<ErtIgn>0</ErtIgn>
+<ErtIgnFlg>0</ErtIgnFlg>
+<ErtMinCnt>0</ErtMinCnt>
+<MrtMethodNone>1</MrtMethodNone>
+<MrtMethodFix>0</MrtMethodFix>
+<MrtFix>0</MrtFix>
+<MrtMethodErt>0</MrtMethodErt>
+<MrtErt>0</MrtErt>
+<MrtMethodDate>0</MrtMethodDate>
+<MrtDays>0</MrtDays>
+<MrtTime>00:00</MrtTime>
+<MrtTZ/>
+<SrtMethodNone>1</SrtMethodNone>
+<SrtMethodFix>0</SrtMethodFix>
+<SrtFix>0</SrtFix>
+<SrtMethodErt>0</SrtMethodErt>
+<SrtErt>0</SrtErt>
+<MrtCancel>0</MrtCancel>
+<MrtExecute>0</MrtExecute>
+<MrtExecuteObj/>
+</RUNTIME>
+<DYNVALUES state="1">
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
+<VALUE state="1">
+<Values>
+<row ERTUsage="0" Name="&amp;UC4RB_ENVIRONMENT_SNAPSHOT_GUID" Value=""/>
+<row ERTUsage="0" Name="&amp;UC4RB_GUID_SEED#" Value=""/>
+</Values>
+<Mode>0</Mode>
+</VALUE>
+</node>
+</dyntree>
+</DYNVALUES>
+<DEPLOYMENT state="1">
+<DeploymentFlag>1</DeploymentFlag>
+<WFTypeA>1</WFTypeA>
+<WFTypeC>0</WFTypeC>
+<AppName>UseCase</AppName>
+<WFName>USE_CASE</WFName>
+<ComponentName/>
+</DEPLOYMENT>
+<ROLLBACK state="1">
+<RollbackFlag>0</RollbackFlag>
+<CBackupObj/>
+<CRollbackObj/>
+<FBackupPath/>
+<FDeleteBefore>0</FDeleteBefore>
+<FInclSubDirs>0</FInclSubDirs>
+</ROLLBACK>
+<SCRIPT mode="1" state="1">
+<MSCRI><![CDATA[:SET &TIME# = SYS_TIME("HH:MM:SS")
+:SET &DATE# = SYS_DATE("YYYY-MM-DD")
+:PSET &UC4RB_GUID_SEED# = STR_CAT(&DATE#, &TIME#)]]></MSCRI>
+</SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBP>
+<JOBP AllowExternal="1" name="RM.DEFAULT.TRAINAPP.TRAINWORKFLOW">
+<XHEADER state="1">
+<Title>TrainWorkflow</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<Active>1</Active>
+<OH_SubType/>
+<CustomAttributes KeyListID="0" dataRequestID="0"/>
+</XHEADER>
+<SYNCREF state="1">
+<Syncs/>
+</SYNCREF>
+<ATTR_JOBP state="1">
+<Queue>CLIENT_QUEUE</Queue>
+<ChildQueue>*OWN</ChildQueue>
+<StartType/>
+<ExtRepDef>1</ExtRepDef>
+<ExtRepAll>0</ExtRepAll>
+<ExtRepNone>0</ExtRepNone>
+<IntAccount/>
+<AutoDeactNo>0</AutoDeactNo>
+<AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
+<AutoDeactErrorFree>1</AutoDeactErrorFree>
+<DeactWhen>ANY_OK</DeactWhen>
+<AutoDeactAlways>0</AutoDeactAlways>
+<DeactDelay>0</DeactDelay>
+<ActAtRun>1</ActAtRun>
+<UC4Priority>0</UC4Priority>
+<PassPriority>0</PassPriority>
+<MaxParallel2>0</MaxParallel2>
+<ReuseHG>1</ReuseHG>
+<MpElse1>1</MpElse1>
+<MpElse2>0</MpElse2>
+<TZ/>
+<RWhen/>
+<RExecute/>
+<JPA_SubType/>
+</ATTR_JOBP>
+<JOBP state="1">
+<JobpStruct mode="design">
+<task Alias="" BranchType="0" Col="1" Lnr="1" OType="&lt;START&gt;" Object="START" ParentAlias="" ParentObject="" Row="1" Text2="">
+<checkpoint RollbackFlag="0" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="0" WElseS="1" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors/>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree/>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<task Alias="" BranchType="0" Col="2" Lnr="2" OType="JOBP" Object="RM.DEFAULT.TRAINAPP.TRAINWORKFLOW.TRAINFILES" ParentAlias="" ParentObject="" Row="1" Text2="">
+<checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="1" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="1" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors>
+<pre BranchType="0" Lnr="1" PreLnr="1" When="ANY_OK" type="container"/>
+</predecessors>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values>
+<row ERTUsage="0" Mod="0" Name="&amp;AGENT#" Value="EXT:agent"/>
+<row ERTUsage="0" Mod="0" Name="&amp;LOGIN#" Value="EXT:@global/login"/>
+<row ERTUsage="0" Mod="0" Name="&amp;OVERWRITE_AGENT#" Value="EXT:/agent_assignment/agent"/>
+<row ERTUsage="0" Mod="0" Name="&amp;OVERWRITE_LOGIN#" Value="EXT:/agent_assignment/login"/>
+<row ERTUsage="0" Mod="0" Name="&amp;TARGET_ID#" Value="EXT:@target/system/id"/>
+</Values>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_ENVIRONMENT_SNAPSHOT_GUID" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_GUID_SEED#" Value=""/>
+</Values>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
+<node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
+</dyntree>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<task Alias="" BranchType="0" Col="2" Lnr="3" OType="JOBP" Object="RM.DEFAULT.TRAINAPP.TRAINWORKFLOW.TRAINWEBAPP" ParentAlias="" ParentObject="" Row="2" Text2="">
+<checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="1" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="1" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors>
+<pre BranchType="0" Lnr="1" PreLnr="1" When="ANY_OK" type="container"/>
+</predecessors>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values>
+<row ERTUsage="0" Mod="0" Name="&amp;AGENT#" Value="EXT:agent"/>
+<row ERTUsage="0" Mod="0" Name="&amp;LOGIN#" Value="EXT:@global/login"/>
+<row ERTUsage="0" Mod="0" Name="&amp;OVERWRITE_AGENT#" Value="EXT:/agent_assignment/agent"/>
+<row ERTUsage="0" Mod="0" Name="&amp;OVERWRITE_LOGIN#" Value="EXT:/agent_assignment/login"/>
+<row ERTUsage="0" Mod="0" Name="&amp;TARGET_ID#" Value="EXT:@target/system/id"/>
+</Values>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_ENVIRONMENT_SNAPSHOT_GUID" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_GUID_SEED#" Value=""/>
+</Values>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
+<node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
+</dyntree>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<task Alias="" BranchType="0" Col="4" Lnr="4" OType="&lt;END&gt;" Object="END" ParentAlias="" ParentObject="" Row="1" Text2="">
+<checkpoint RollbackFlag="0" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="1" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors>
+<pre BranchType="0" Lnr="1" PreLnr="2" When="ANY_OK" type="container"/>
+<pre BranchType="0" Lnr="2" PreLnr="3" When="ANY_OK" type="container"/>
+</predecessors>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree/>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<OPTIONS/>
+</JobpStruct>
+</JOBP>
+<RUNTIME state="1">
+<MaxRetCode>0</MaxRetCode>
+<MrcExecute/>
+<MrcElseE>0</MrcElseE>
+<FcstStatus>0| |</FcstStatus>
+<Ert>68</Ert>
+<ErtMethodDef>1</ErtMethodDef>
+<ErtMethodFix>0</ErtMethodFix>
+<ErtFix>0</ErtFix>
+<ErtDynMethod>2|Average</ErtDynMethod>
+<ErtMethodDyn>0</ErtMethodDyn>
+<ErtCnt>0</ErtCnt>
+<ErtCorr>0</ErtCorr>
+<ErtIgn>0</ErtIgn>
+<ErtIgnFlg>0</ErtIgnFlg>
+<ErtMinCnt>0</ErtMinCnt>
+<MrtMethodNone>1</MrtMethodNone>
+<MrtMethodFix>0</MrtMethodFix>
+<MrtFix>0</MrtFix>
+<MrtMethodErt>0</MrtMethodErt>
+<MrtErt>0</MrtErt>
+<MrtMethodDate>0</MrtMethodDate>
+<MrtDays>0</MrtDays>
+<MrtTime>00:00</MrtTime>
+<MrtTZ/>
+<SrtMethodNone>1</SrtMethodNone>
+<SrtMethodFix>0</SrtMethodFix>
+<SrtFix>0</SrtFix>
+<SrtMethodErt>0</SrtMethodErt>
+<SrtErt>0</SrtErt>
+<MrtCancel>0</MrtCancel>
+<MrtExecute>0</MrtExecute>
+<MrtExecuteObj/>
+</RUNTIME>
+<DYNVALUES state="1">
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
+<VALUE state="1">
+<Values>
+<row ERTUsage="0" Name="&amp;UC4RB_ENVIRONMENT_SNAPSHOT_GUID" Value=""/>
+<row ERTUsage="0" Name="&amp;UC4RB_GUID_SEED#" Value=""/>
+</Values>
+<Mode>0</Mode>
+</VALUE>
+</node>
+</dyntree>
+</DYNVALUES>
+<DEPLOYMENT state="1">
+<DeploymentFlag>1</DeploymentFlag>
+<WFTypeA>1</WFTypeA>
+<WFTypeC>0</WFTypeC>
+<AppName>TrainApp</AppName>
+<WFName>TrainWorkflow</WFName>
+<ComponentName/>
+</DEPLOYMENT>
+<ROLLBACK state="1">
+<RollbackFlag>0</RollbackFlag>
+<CBackupObj/>
+<CRollbackObj/>
+<FBackupPath/>
+<FDeleteBefore>0</FDeleteBefore>
+<FInclSubDirs>0</FInclSubDirs>
+</ROLLBACK>
+<SCRIPT mode="1" state="1">
+<MSCRI><![CDATA[:SET &TIME# = SYS_TIME("HH:MM:SS")
+:SET &DATE# = SYS_DATE("YYYY-MM-DD")
+:PSET &UC4RB_GUID_SEED# = STR_CAT(&DATE#, &TIME#)]]></MSCRI>
+</SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBP>
+<JOBP AllowExternal="1" name="RM.DEFAULT.TRAINAPP.TRAIN_WF2.NEWFILE">
+<XHEADER state="1">
+<Title>NEWFILE</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<Active>1</Active>
+<OH_SubType/>
+<CustomAttributes KeyListID="0" dataRequestID="0"/>
+</XHEADER>
+<SYNCREF state="1">
+<Syncs/>
+</SYNCREF>
+<ATTR_JOBP state="1">
+<Queue>CLIENT_QUEUE</Queue>
+<ChildQueue>*OWN</ChildQueue>
+<StartType/>
+<ExtRepDef>1</ExtRepDef>
+<ExtRepAll>0</ExtRepAll>
+<ExtRepNone>0</ExtRepNone>
+<IntAccount/>
+<AutoDeactNo>0</AutoDeactNo>
+<AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
+<AutoDeactErrorFree>1</AutoDeactErrorFree>
+<DeactWhen>ANY_OK</DeactWhen>
+<AutoDeactAlways>0</AutoDeactAlways>
+<DeactDelay>0</DeactDelay>
+<ActAtRun>1</ActAtRun>
+<UC4Priority>0</UC4Priority>
+<PassPriority>0</PassPriority>
+<MaxParallel2>0</MaxParallel2>
+<ReuseHG>1</ReuseHG>
+<MpElse1>1</MpElse1>
+<MpElse2>0</MpElse2>
+<TZ/>
+<RWhen/>
+<RExecute/>
+<JPA_SubType/>
+</ATTR_JOBP>
+<JOBP state="1">
+<JobpStruct mode="design">
+<task Alias="" BranchType="0" Col="1" Lnr="1" OType="&lt;START&gt;" Object="START" ParentAlias="" ParentObject="" Row="1" Text2="">
+<checkpoint RollbackFlag="0" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="0" WElseS="1" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors/>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree/>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<task Alias="" BranchType="0" Col="2" Lnr="2" OType="JOBP" Object="PCK.AUTOMIC_FILESYSTEM.PUB.ACTION.CREATE_DIR" ParentAlias="" ParentObject="" Row="1" Text2="">
+<checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="1" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors>
+<pre BranchType="0" Lnr="1" PreLnr="1" When="ANY_OK" type="container"/>
+</predecessors>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values>
+<row ERTUsage="0" Mod="0" Name="&amp;AGENT#" Value="EXT:agent"/>
+<row ERTUsage="0" Mod="0" Name="&amp;LOGIN#" Value="EXT:@global/login"/>
+<row ERTUsage="0" Mod="0" Name="&amp;OVERWRITE_AGENT#" Value="EXT:/agent_assignment/agent"/>
+<row ERTUsage="0" Mod="0" Name="&amp;OVERWRITE_LOGIN#" Value="EXT:/agent_assignment/login"/>
+<row ERTUsage="0" Mod="0" Name="&amp;TARGET_ID#" Value="EXT:@target/system/id"/>
+</Values>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
+<node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
+<node content="1" id="PCK.AUTOMIC_FILESYSTEM.PRV.PROMPTSET.CREATE_DIR" name="PCK.AUTOMIC_FILESYSTEM.PRV.PROMPTSET.CREATE_DIR" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_FILESYSTEM.PRV.PROMPTSET.CREATE_DIR">
+<PRPTBOX promptset="PCK.AUTOMIC_FILESYSTEM.PRV.PROMPTSET.CREATE_DIR">
+<UC4RB_DIR_FILE_CREATE_DIRs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DIR_FILE_CREATE_DIR#" promptsetname="PCK.AUTOMIC_FILESYSTEM.PRV.PROMPTSET.CREATE_DIR">EXT:/target/training_file_dir</UC4RB_DIR_FILE_CREATE_DIRs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+<node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
+<PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
+<AGENTs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;AGENT#</AGENTs.00>
+<LOGINs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;LOGIN#</LOGINs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+</dyntree>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<task Alias="" BranchType="0" Col="3" Lnr="3" OType="JOBP" Object="PCK.AUTOMIC_FILESYSTEM.PUB.ACTION.CREATE_FILE" ParentAlias="" ParentObject="" Row="1" Text2="">
+<checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="1" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors>
+<pre BranchType="0" Lnr="1" PreLnr="2" When="ANY_OK" type="container"/>
+</predecessors>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values>
+<row ERTUsage="0" Mod="0" Name="&amp;AGENT#" Value="EXT:agent"/>
+<row ERTUsage="0" Mod="0" Name="&amp;LOGIN#" Value="EXT:@global/login"/>
+<row ERTUsage="0" Mod="0" Name="&amp;OVERWRITE_AGENT#" Value="EXT:/agent_assignment/agent"/>
+<row ERTUsage="0" Mod="0" Name="&amp;OVERWRITE_LOGIN#" Value="EXT:/agent_assignment/login"/>
+<row ERTUsage="0" Mod="0" Name="&amp;TARGET_ID#" Value="EXT:@target/system/id"/>
+</Values>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
+<node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
+<node content="1" id="PCK.AUTOMIC_FILESYSTEM.PRV.PROMPTSET.CREATE_FILE" name="PCK.AUTOMIC_FILESYSTEM.PRV.PROMPTSET.CREATE_FILE" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_FILESYSTEM.PRV.PROMPTSET.CREATE_FILE">
+<PRPTBOX promptset="PCK.AUTOMIC_FILESYSTEM.PRV.PROMPTSET.CREATE_FILE">
+<UC4RB_DIR_FILE_CREATE_FILEs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DIR_FILE_CREATE_FILE#" promptsetname="PCK.AUTOMIC_FILESYSTEM.PRV.PROMPTSET.CREATE_FILE">EXT:/target/training_file_name</UC4RB_DIR_FILE_CREATE_FILEs.00>
+<UC4RB_DIR_FILE_FULL_PATHs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DIR_FILE_FULL_PATH#" promptsetname="PCK.AUTOMIC_FILESYSTEM.PRV.PROMPTSET.CREATE_FILE">YES</UC4RB_DIR_FILE_FULL_PATHs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+<node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
+<PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
+<AGENTs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;AGENT#</AGENTs.00>
+<LOGINs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;LOGIN#</LOGINs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+</dyntree>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<task Alias="" BranchType="0" Col="2" Lnr="4" OType="JOBP" Object="PCK.CUSTOM_HELLO_WORLD.PUB.ACTION.HELLO_WORLD" ParentAlias="" ParentObject="" Row="2" Text2="">
+<checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="1" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors>
+<pre BranchType="0" Lnr="1" PreLnr="1" When="ANY_OK" type="container"/>
+</predecessors>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values>
+<row ERTUsage="0" Mod="0" Name="&amp;AGENT#" Value="EXT:agent"/>
+<row ERTUsage="0" Mod="0" Name="&amp;LOGIN#" Value="EXT:@global/login"/>
+<row ERTUsage="0" Mod="0" Name="&amp;OVERWRITE_AGENT#" Value="EXT:/agent_assignment/agent"/>
+<row ERTUsage="0" Mod="0" Name="&amp;OVERWRITE_LOGIN#" Value="EXT:/agent_assignment/login"/>
+<row ERTUsage="0" Mod="0" Name="&amp;TARGET_ID#" Value="EXT:@target/system/id"/>
+</Values>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
+<node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
+<node content="1" id="PCK.CUSTOM_HELLO_WORLD.PRV.PROMPTSET.HELLO_WORLD" name="PCK.CUSTOM_HELLO_WORLD.PRV.PROMPTSET.HELLO_WORLD" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.CUSTOM_HELLO_WORLD.PRV.PROMPTSET.HELLO_WORLD">
+<PRPTBOX promptset="PCK.CUSTOM_HELLO_WORLD.PRV.PROMPTSET.HELLO_WORLD">
+<VAR1s.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="VAR1#" promptsetname="PCK.CUSTOM_HELLO_WORLD.PRV.PROMPTSET.HELLO_WORLD">is this working</VAR1s.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+<node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
+<PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
+<AGENTs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;AGENT#</AGENTs.00>
+<LOGINs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;LOGIN#</LOGINs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+</dyntree>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<task Alias="" BranchType="0" Col="4" Lnr="5" OType="&lt;END&gt;" Object="END" ParentAlias="" ParentObject="" Row="1" Text2="">
+<checkpoint RollbackFlag="0" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="1" WElseH="0" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors>
+<pre BranchType="0" Lnr="1" PreLnr="3" When="ANY_OK" type="container"/>
+<pre BranchType="0" Lnr="2" PreLnr="4" When="ANY_OK" type="container"/>
+</predecessors>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree/>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<OPTIONS/>
+</JobpStruct>
+</JOBP>
+<RUNTIME state="1">
+<MaxRetCode>0</MaxRetCode>
+<MrcExecute/>
+<MrcElseE>0</MrcElseE>
+<FcstStatus>0| |</FcstStatus>
+<Ert>14</Ert>
+<ErtMethodDef>1</ErtMethodDef>
+<ErtMethodFix>0</ErtMethodFix>
+<ErtFix>0</ErtFix>
+<ErtDynMethod>2|Average</ErtDynMethod>
+<ErtMethodDyn>0</ErtMethodDyn>
+<ErtCnt>0</ErtCnt>
+<ErtCorr>0</ErtCorr>
+<ErtIgn>0</ErtIgn>
+<ErtIgnFlg>0</ErtIgnFlg>
+<ErtMinCnt>0</ErtMinCnt>
+<MrtMethodNone>1</MrtMethodNone>
+<MrtMethodFix>0</MrtMethodFix>
+<MrtFix>0</MrtFix>
+<MrtMethodErt>0</MrtMethodErt>
+<MrtErt>0</MrtErt>
+<MrtMethodDate>0</MrtMethodDate>
+<MrtDays>0</MrtDays>
+<MrtTime>00:00</MrtTime>
+<MrtTZ/>
+<SrtMethodNone>1</SrtMethodNone>
+<SrtMethodFix>0</SrtMethodFix>
+<SrtFix>0</SrtFix>
+<SrtMethodErt>0</SrtMethodErt>
+<SrtErt>0</SrtErt>
+<MrtCancel>0</MrtCancel>
+<MrtExecute>0</MrtExecute>
+<MrtExecuteObj/>
+</RUNTIME>
+<DYNVALUES state="1">
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
+<VALUE state="1">
+<Values>
+<row ERTUsage="0" Name="&amp;AGENT#" Value="EXT:agent"/>
+<row ERTUsage="0" Name="&amp;LOGIN#" Value="EXT:@global/login"/>
+<row ERTUsage="0" Name="&amp;OVERWRITE_AGENT#" Value="EXT:/agent_assignment/agent"/>
+<row ERTUsage="0" Name="&amp;OVERWRITE_LOGIN#" Value="EXT:/agent_assignment/login"/>
+<row ERTUsage="0" Name="&amp;TARGET_ID#" Value="EXT:@target/system/id"/>
+</Values>
+<Mode>0</Mode>
+</VALUE>
+</node>
+</dyntree>
+</DYNVALUES>
+<DEPLOYMENT state="1">
+<DeploymentFlag>1</DeploymentFlag>
+<WFTypeA>0</WFTypeA>
+<WFTypeC>1</WFTypeC>
+<AppName>TrainApp</AppName>
+<WFName/>
+<ComponentName>NEWFILE</ComponentName>
+</DEPLOYMENT>
+<ROLLBACK state="1">
+<RollbackFlag>0</RollbackFlag>
+<CBackupObj/>
+<CRollbackObj/>
+<FBackupPath/>
+<FDeleteBefore>0</FDeleteBefore>
+<FInclSubDirs>0</FInclSubDirs>
+</ROLLBACK>
+<SCRIPT mode="1" state="1">
+<MSCRI><![CDATA[:INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.SET_OS_FOR_COMPONENT_FLOW]]></MSCRI>
+</SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBP>
+<JOBP AllowExternal="1" name="RM.DEFAULT.TRAINAPP.TRAINWORKFLOW.TRAINFILES">
+<XHEADER state="1">
+<Title>TrainFiles</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<Active>1</Active>
+<OH_SubType/>
+<CustomAttributes KeyListID="0" dataRequestID="0"/>
+</XHEADER>
+<SYNCREF state="1">
+<Syncs/>
+</SYNCREF>
+<ATTR_JOBP state="1">
+<Queue>CLIENT_QUEUE</Queue>
+<ChildQueue>*OWN</ChildQueue>
+<StartType/>
+<ExtRepDef>1</ExtRepDef>
+<ExtRepAll>0</ExtRepAll>
+<ExtRepNone>0</ExtRepNone>
+<IntAccount/>
+<AutoDeactNo>0</AutoDeactNo>
+<AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
+<AutoDeactErrorFree>1</AutoDeactErrorFree>
+<DeactWhen>ANY_OK</DeactWhen>
+<AutoDeactAlways>0</AutoDeactAlways>
+<DeactDelay>0</DeactDelay>
+<ActAtRun>1</ActAtRun>
+<UC4Priority>0</UC4Priority>
+<PassPriority>0</PassPriority>
+<MaxParallel2>0</MaxParallel2>
+<ReuseHG>1</ReuseHG>
+<MpElse1>1</MpElse1>
+<MpElse2>0</MpElse2>
+<TZ/>
+<RWhen/>
+<RExecute/>
+<JPA_SubType/>
+</ATTR_JOBP>
+<JOBP state="1">
+<JobpStruct mode="design">
+<task Alias="" BranchType="0" Col="1" Lnr="1" OType="&lt;START&gt;" Object="START" ParentAlias="" ParentObject="" Row="1" Text2="">
+<checkpoint RollbackFlag="0" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="0" WElseS="1" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors/>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree/>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<task Alias="" BranchType="0" Col="2" Lnr="2" OType="JOBP" Object="PCK.AUTOMIC_FILESYSTEM.PUB.ACTION.DELETE" ParentAlias="" ParentObject="" Row="2" Text2="">
+<checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="1" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors>
+<pre BranchType="0" Lnr="1" PreLnr="1" When="ANY_OK" type="container"/>
+</predecessors>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values>
+<row ERTUsage="0" Mod="0" Name="&amp;AGENT#" Value="EXT:agent"/>
+<row ERTUsage="0" Mod="0" Name="&amp;LOGIN#" Value="EXT:@global/login"/>
+<row ERTUsage="0" Mod="0" Name="&amp;OVERWRITE_AGENT#" Value="EXT:/agent_assignment/agent"/>
+<row ERTUsage="0" Mod="0" Name="&amp;OVERWRITE_LOGIN#" Value="EXT:/agent_assignment/login"/>
+<row ERTUsage="0" Mod="0" Name="&amp;TARGET_ID#" Value="EXT:@target/system/id"/>
+</Values>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
+<node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
+<node content="1" id="PCK.AUTOMIC_FILESYSTEM.PRV.PROMPTSET.DELETE" name="PCK.AUTOMIC_FILESYSTEM.PRV.PROMPTSET.DELETE" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_FILESYSTEM.PRV.PROMPTSET.DELETE">
+<PRPTBOX promptset="PCK.AUTOMIC_FILESYSTEM.PRV.PROMPTSET.DELETE">
+<UC4RB_DIR_FILE_RM_FAILs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DIR_FILE_RM_FAIL#" promptsetname="PCK.AUTOMIC_FILESYSTEM.PRV.PROMPTSET.DELETE">NO</UC4RB_DIR_FILE_RM_FAILs.00>
+<UC4RB_DIR_FILE_RM_NAMEs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DIR_FILE_RM_NAME#" promptsetname="PCK.AUTOMIC_FILESYSTEM.PRV.PROMPTSET.DELETE">EXT:/staging/working_base_dir</UC4RB_DIR_FILE_RM_NAMEs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+<node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
+<PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
+<AGENTs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;AGENT#</AGENTs.00>
+<LOGINs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;LOGIN#</LOGINs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+</dyntree>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<task Alias="" BranchType="0" Col="3" Lnr="3" OType="JOBP" Object="PCK.AUTOMIC_FILESYSTEM.PUB.ACTION.CREATE_DIR" ParentAlias="" ParentObject="" Row="2" Text2="">
+<checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="1" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors>
+<pre BranchType="0" Lnr="1" PreLnr="2" When="ANY_OK" type="container"/>
+</predecessors>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values>
+<row ERTUsage="0" Mod="0" Name="&amp;AGENT#" Value="EXT:agent"/>
+<row ERTUsage="0" Mod="0" Name="&amp;LOGIN#" Value="EXT:@global/login"/>
+<row ERTUsage="0" Mod="0" Name="&amp;OVERWRITE_AGENT#" Value="EXT:/agent_assignment/agent"/>
+<row ERTUsage="0" Mod="0" Name="&amp;OVERWRITE_LOGIN#" Value="EXT:/agent_assignment/login"/>
+<row ERTUsage="0" Mod="0" Name="&amp;TARGET_ID#" Value="EXT:@target/system/id"/>
+</Values>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
+<node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
+<node content="1" id="PCK.AUTOMIC_FILESYSTEM.PRV.PROMPTSET.CREATE_DIR" name="PCK.AUTOMIC_FILESYSTEM.PRV.PROMPTSET.CREATE_DIR" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_FILESYSTEM.PRV.PROMPTSET.CREATE_DIR">
+<PRPTBOX promptset="PCK.AUTOMIC_FILESYSTEM.PRV.PROMPTSET.CREATE_DIR">
+<UC4RB_DIR_FILE_CREATE_DIRs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DIR_FILE_CREATE_DIR#" promptsetname="PCK.AUTOMIC_FILESYSTEM.PRV.PROMPTSET.CREATE_DIR">EXT:/staging/working_base_dir</UC4RB_DIR_FILE_CREATE_DIRs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+<node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
+<PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
+<AGENTs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;AGENT#</AGENTs.00>
+<LOGINs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;LOGIN#</LOGINs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+</dyntree>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<task Alias="" BranchType="0" Col="3" Lnr="4" OType="JOBP" Object="PCK.AUTOMIC_FILESYSTEM.PUB.ACTION.COPY" ParentAlias="" ParentObject="" Row="1" Text2="">
+<checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="1" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors>
+<pre BranchType="0" Lnr="1" PreLnr="3" When="ANY_OK" type="container"/>
+</predecessors>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values>
+<row ERTUsage="0" Mod="0" Name="&amp;AGENT#" Value="EXT:agent"/>
+<row ERTUsage="0" Mod="0" Name="&amp;LOGIN#" Value="EXT:@global/login"/>
+<row ERTUsage="0" Mod="0" Name="&amp;OVERWRITE_AGENT#" Value="EXT:/agent_assignment/agent"/>
+<row ERTUsage="0" Mod="0" Name="&amp;OVERWRITE_LOGIN#" Value="EXT:/agent_assignment/login"/>
+<row ERTUsage="0" Mod="0" Name="&amp;TARGET_ID#" Value="EXT:@target/system/id"/>
+</Values>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
+<node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
+<node content="1" id="PCK.AUTOMIC_FILESYSTEM.PRV.PROMPTSET.COPY" name="PCK.AUTOMIC_FILESYSTEM.PRV.PROMPTSET.COPY" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_FILESYSTEM.PRV.PROMPTSET.COPY">
+<PRPTBOX promptset="PCK.AUTOMIC_FILESYSTEM.PRV.PROMPTSET.COPY">
+<UC4RB_COPY_EXCLUDEs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_COPY_EXCLUDE#" promptsetname="PCK.AUTOMIC_FILESYSTEM.PRV.PROMPTSET.COPY"/>
+<UC4RB_DIR_FILE_CP_OVERWRITEs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DIR_FILE_CP_OVERWRITE#" promptsetname="PCK.AUTOMIC_FILESYSTEM.PRV.PROMPTSET.COPY">YES</UC4RB_DIR_FILE_CP_OVERWRITEs.00>
+<UC4RB_DIR_FILE_CP_SOURCEs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DIR_FILE_CP_SOURCE#" promptsetname="PCK.AUTOMIC_FILESYSTEM.PRV.PROMPTSET.COPY">EXT:/custom/source_uri</UC4RB_DIR_FILE_CP_SOURCEs.00>
+<UC4RB_DIR_FILE_CP_TARGETs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DIR_FILE_CP_TARGET#" promptsetname="PCK.AUTOMIC_FILESYSTEM.PRV.PROMPTSET.COPY">EXT:/staging/working_base_dir</UC4RB_DIR_FILE_CP_TARGETs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+<node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
+<PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
+<AGENTs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;AGENT#</AGENTs.00>
+<LOGINs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;LOGIN#</LOGINs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+</dyntree>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<task Alias="" BranchType="0" Col="4" Lnr="5" OType="JOBP" Object="PCK.AUTOMIC_FILESYSTEM.PUB.ACTION.GET_DISK_SPACE" ParentAlias="" ParentObject="" Row="1" Text2="">
+<checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="1" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors>
+<pre BranchType="0" Lnr="1" PreLnr="4" When="ANY_OK" type="container"/>
+</predecessors>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_OUT_DISK_SPACE#" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_OUT_FREE_SPACE#" Value=""/>
+</Values>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values>
+<row ERTUsage="0" Mod="0" Name="&amp;AGENT#" Value="EXT:agent"/>
+<row ERTUsage="0" Mod="0" Name="&amp;LOGIN#" Value="EXT:@global/login"/>
+<row ERTUsage="0" Mod="0" Name="&amp;OVERWRITE_AGENT#" Value="EXT:/agent_assignment/agent"/>
+<row ERTUsage="0" Mod="0" Name="&amp;OVERWRITE_LOGIN#" Value="EXT:/agent_assignment/login"/>
+<row ERTUsage="0" Mod="0" Name="&amp;TARGET_ID#" Value="EXT:@target/system/id"/>
+</Values>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
+<node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
+<node content="1" id="PCK.AUTOMIC_FILESYSTEM.PRV.PROMPTSET.GET_DISK_SPACE" name="PCK.AUTOMIC_FILESYSTEM.PRV.PROMPTSET.GET_DISK_SPACE" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_FILESYSTEM.PRV.PROMPTSET.GET_DISK_SPACE">
+<PRPTBOX promptset="PCK.AUTOMIC_FILESYSTEM.PRV.PROMPTSET.GET_DISK_SPACE">
+<UC4RB_UNIX_ALLs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UNIX_ALL#" promptsetname="PCK.AUTOMIC_FILESYSTEM.PRV.PROMPTSET.GET_DISK_SPACE">NO</UC4RB_UNIX_ALLs.00>
+<UC4RB_UNIX_EXCLUDEs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UNIX_EXCLUDE#" promptsetname="PCK.AUTOMIC_FILESYSTEM.PRV.PROMPTSET.GET_DISK_SPACE"/>
+<UC4RB_UNIX_FILEs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UNIX_FILE#" promptsetname="PCK.AUTOMIC_FILESYSTEM.PRV.PROMPTSET.GET_DISK_SPACE"/>
+<UC4RB_UNIX_HUMANs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UNIX_HUMAN#" promptsetname="PCK.AUTOMIC_FILESYSTEM.PRV.PROMPTSET.GET_DISK_SPACE">NO</UC4RB_UNIX_HUMANs.00>
+<UC4RB_UNIX_LIMIT_TOs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UNIX_LIMIT_TO#" promptsetname="PCK.AUTOMIC_FILESYSTEM.PRV.PROMPTSET.GET_DISK_SPACE"/>
+<UC4RB_UNIX_LOCALs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_UNIX_LOCAL#" promptsetname="PCK.AUTOMIC_FILESYSTEM.PRV.PROMPTSET.GET_DISK_SPACE">YES</UC4RB_UNIX_LOCALs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+<node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
+<PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
+<AGENTs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;AGENT#</AGENTs.00>
+<LOGINs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;LOGIN#</LOGINs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+</dyntree>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<task Alias="" BranchType="0" Col="5" Lnr="6" OType="&lt;END&gt;" Object="END" ParentAlias="" ParentObject="" Row="1" Text2="">
+<checkpoint RollbackFlag="0" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="1" WElseH="0" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors>
+<pre BranchType="0" Lnr="1" PreLnr="5" When="ANY_OK" type="container"/>
+</predecessors>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree/>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<OPTIONS/>
+</JobpStruct>
+</JOBP>
+<RUNTIME state="1">
+<MaxRetCode>0</MaxRetCode>
+<MrcExecute/>
+<MrcElseE>0</MrcElseE>
+<FcstStatus>0| |</FcstStatus>
+<Ert>59</Ert>
+<ErtMethodDef>1</ErtMethodDef>
+<ErtMethodFix>0</ErtMethodFix>
+<ErtFix>0</ErtFix>
+<ErtDynMethod>2|Average</ErtDynMethod>
+<ErtMethodDyn>0</ErtMethodDyn>
+<ErtCnt>0</ErtCnt>
+<ErtCorr>0</ErtCorr>
+<ErtIgn>0</ErtIgn>
+<ErtIgnFlg>0</ErtIgnFlg>
+<ErtMinCnt>0</ErtMinCnt>
+<MrtMethodNone>1</MrtMethodNone>
+<MrtMethodFix>0</MrtMethodFix>
+<MrtFix>0</MrtFix>
+<MrtMethodErt>0</MrtMethodErt>
+<MrtErt>0</MrtErt>
+<MrtMethodDate>0</MrtMethodDate>
+<MrtDays>0</MrtDays>
+<MrtTime>00:00</MrtTime>
+<MrtTZ/>
+<SrtMethodNone>1</SrtMethodNone>
+<SrtMethodFix>0</SrtMethodFix>
+<SrtFix>0</SrtFix>
+<SrtMethodErt>0</SrtMethodErt>
+<SrtErt>0</SrtErt>
+<MrtCancel>0</MrtCancel>
+<MrtExecute>0</MrtExecute>
+<MrtExecuteObj/>
+</RUNTIME>
+<DYNVALUES state="1">
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
+<VALUE state="1">
+<Values>
+<row ERTUsage="0" Name="&amp;AGENT#" Value="EXT:agent"/>
+<row ERTUsage="0" Name="&amp;LOGIN#" Value="EXT:@global/login"/>
+<row ERTUsage="0" Name="&amp;OVERWRITE_AGENT#" Value="EXT:/agent_assignment/agent"/>
+<row ERTUsage="0" Name="&amp;OVERWRITE_LOGIN#" Value="EXT:/agent_assignment/login"/>
+<row ERTUsage="0" Name="&amp;TARGET_ID#" Value="EXT:@target/system/id"/>
+</Values>
+<Mode>0</Mode>
+</VALUE>
+</node>
+</dyntree>
+</DYNVALUES>
+<DEPLOYMENT state="1">
+<DeploymentFlag>1</DeploymentFlag>
+<WFTypeA>0</WFTypeA>
+<WFTypeC>1</WFTypeC>
+<AppName>TrainApp</AppName>
+<WFName/>
+<ComponentName>TrainFiles</ComponentName>
+</DEPLOYMENT>
+<ROLLBACK state="1">
+<RollbackFlag>0</RollbackFlag>
+<CBackupObj/>
+<CRollbackObj/>
+<FBackupPath/>
+<FDeleteBefore>0</FDeleteBefore>
+<FInclSubDirs>0</FInclSubDirs>
+</ROLLBACK>
+<SCRIPT mode="1" state="1">
+<MSCRI><![CDATA[:INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.SET_OS_FOR_COMPONENT_FLOW]]></MSCRI>
+</SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBP>
+<JOBP AllowExternal="1" name="RM.DEFAULT.TRAINAPP.TRAINWORKFLOW.TRAINWEBAPP">
+<XHEADER state="1">
+<Title>TrainWebApp</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<Active>1</Active>
+<OH_SubType/>
+<CustomAttributes KeyListID="0" dataRequestID="0"/>
+</XHEADER>
+<SYNCREF state="1">
+<Syncs/>
+</SYNCREF>
+<ATTR_JOBP state="1">
+<Queue>CLIENT_QUEUE</Queue>
+<ChildQueue>*OWN</ChildQueue>
+<StartType/>
+<ExtRepDef>1</ExtRepDef>
+<ExtRepAll>0</ExtRepAll>
+<ExtRepNone>0</ExtRepNone>
+<IntAccount/>
+<AutoDeactNo>0</AutoDeactNo>
+<AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
+<AutoDeactErrorFree>1</AutoDeactErrorFree>
+<DeactWhen>ANY_OK</DeactWhen>
+<AutoDeactAlways>0</AutoDeactAlways>
+<DeactDelay>0</DeactDelay>
+<ActAtRun>1</ActAtRun>
+<UC4Priority>0</UC4Priority>
+<PassPriority>0</PassPriority>
+<MaxParallel2>0</MaxParallel2>
+<ReuseHG>1</ReuseHG>
+<MpElse1>1</MpElse1>
+<MpElse2>0</MpElse2>
+<TZ/>
+<RWhen/>
+<RExecute/>
+<JPA_SubType/>
+</ATTR_JOBP>
+<JOBP state="1">
+<JobpStruct mode="design">
+<task Alias="" BranchType="0" Col="1" Lnr="1" OType="&lt;START&gt;" Object="START" ParentAlias="" ParentObject="" Row="1" Text2="">
+<checkpoint RollbackFlag="0" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="0" WElseS="1" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors/>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree/>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<task Alias="" BranchType="0" Col="2" Lnr="2" OType="JOBP" Object="PCK.AUTOMIC_TOMCAT.PUB.ACTION.UNDEPLOY_APPLICATION" ParentAlias="" ParentObject="" Row="1" Text2="">
+<checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="1" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors>
+<pre BranchType="0" Lnr="1" PreLnr="1" When="ANY_OK" type="container"/>
+</predecessors>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_BACKUP_DIRECTORY#" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_BACKUP_REPORT#" Value=""/>
+</Values>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values>
+<row ERTUsage="0" Mod="0" Name="&amp;AGENT#" Value="EXT:agent"/>
+<row ERTUsage="0" Mod="0" Name="&amp;LOGIN#" Value="EXT:@global/login"/>
+<row ERTUsage="0" Mod="0" Name="&amp;OVERWRITE_AGENT#" Value="EXT:/agent_assignment/agent"/>
+<row ERTUsage="0" Mod="0" Name="&amp;OVERWRITE_LOGIN#" Value="EXT:/agent_assignment/login"/>
+<row ERTUsage="0" Mod="0" Name="&amp;TARGET_ID#" Value="EXT:@target/system/id"/>
+</Values>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
+<node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
+<node content="1" id="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.UNDEPLOY_APPLICATION" name="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.UNDEPLOY_APPLICATION" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.UNDEPLOY_APPLICATION">
+<PRPTBOX promptset="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.UNDEPLOY_APPLICATION">
+<UC4RB_TC_APPBASEs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_APPBASE#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.UNDEPLOY_APPLICATION">EXT:/tomcat/appbase_directory</UC4RB_TC_APPBASEs.00>
+<UC4RB_TC_BASE_URLs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_BASE_URL#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.UNDEPLOY_APPLICATION">EXT:/tomcat/base_url</UC4RB_TC_BASE_URLs.00>
+<UC4RB_TC_CONTEXT_PATHs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_CONTEXT_PATH#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.UNDEPLOY_APPLICATION">EXT:/tomcat/relative_context_path</UC4RB_TC_CONTEXT_PATHs.00>
+<UC4RB_TC_FAIL_IF_NOT_DEPLOYEDs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_FAIL_IF_NOT_DEPLOYED#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.UNDEPLOY_APPLICATION">NO</UC4RB_TC_FAIL_IF_NOT_DEPLOYEDs.00>
+<UC4RB_TC_HOME_DIRs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_HOME_DIR#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.UNDEPLOY_APPLICATION">EXT:/tomcat/server/home_directory</UC4RB_TC_HOME_DIRs.00>
+<UC4RB_TC_MGR_APPs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_MGR_APP#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.UNDEPLOY_APPLICATION">manager</UC4RB_TC_MGR_APPs.00>
+<UC4RB_TC_PASSWORDs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_PASSWORD#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.UNDEPLOY_APPLICATION">EXT:/tomcat/password</UC4RB_TC_PASSWORDs.00>
+<UC4RB_TC_USERNAMEs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_USERNAME#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.UNDEPLOY_APPLICATION">EXT:/tomcat/username</UC4RB_TC_USERNAMEs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+<node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
+<PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
+<AGENTs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;AGENT#</AGENTs.00>
+<LOGINs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;LOGIN#</LOGINs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+</dyntree>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<task Alias="" BranchType="0" Col="3" Lnr="3" OType="JOBP" Object="PCK.AUTOMIC_TOMCAT.PUB.ACTION.DEPLOY_APPLICATION" ParentAlias="" ParentObject="" Row="1" Text2="">
+<checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="1" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors>
+<pre BranchType="0" Lnr="1" PreLnr="2" When="ANY_OK" type="container"/>
+</predecessors>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_BACKUP_DIRECTORY#" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_BACKUP_REPORT#" Value=""/>
+</Values>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values>
+<row ERTUsage="0" Mod="0" Name="&amp;AGENT#" Value="EXT:agent"/>
+<row ERTUsage="0" Mod="0" Name="&amp;LOGIN#" Value="EXT:@global/login"/>
+<row ERTUsage="0" Mod="0" Name="&amp;OVERWRITE_AGENT#" Value="EXT:/agent_assignment/agent"/>
+<row ERTUsage="0" Mod="0" Name="&amp;OVERWRITE_LOGIN#" Value="EXT:/agent_assignment/login"/>
+<row ERTUsage="0" Mod="0" Name="&amp;TARGET_ID#" Value="EXT:@target/system/id"/>
+</Values>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
+<node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
+<node content="1" id="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.DEPLOY_APPLICATION" name="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.DEPLOY_APPLICATION" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.DEPLOY_APPLICATION">
+<PRPTBOX promptset="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.DEPLOY_APPLICATION">
+<UC4RB_TC_APPBASEs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_APPBASE#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.DEPLOY_APPLICATION">EXT:/tomcat/appbase_directory</UC4RB_TC_APPBASEs.00>
+<UC4RB_TC_BASE_URLs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_BASE_URL#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.DEPLOY_APPLICATION">EXT:/tomcat/base_url</UC4RB_TC_BASE_URLs.00>
+<UC4RB_TC_CONTEXT_PATHs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_CONTEXT_PATH#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.DEPLOY_APPLICATION">/petstore</UC4RB_TC_CONTEXT_PATHs.00>
+<UC4RB_TC_FAIL_IF_DEPLOYEDs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_FAIL_IF_DEPLOYED#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.DEPLOY_APPLICATION">NO</UC4RB_TC_FAIL_IF_DEPLOYEDs.00>
+<UC4RB_TC_FARM_DEPLOYs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_FARM_DEPLOY#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.DEPLOY_APPLICATION">NO</UC4RB_TC_FARM_DEPLOYs.00>
+<UC4RB_TC_HOME_DIRs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_HOME_DIR#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.DEPLOY_APPLICATION">EXT:/tomcat/server/home_directory</UC4RB_TC_HOME_DIRs.00>
+<UC4RB_TC_MGR_APPs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_MGR_APP#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.DEPLOY_APPLICATION">manager</UC4RB_TC_MGR_APPs.00>
+<UC4RB_TC_PACKAGEs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_PACKAGE#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.DEPLOY_APPLICATION">EXT:/tomcat/package_full_path</UC4RB_TC_PACKAGEs.00>
+<UC4RB_TC_PASSWORDs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_PASSWORD#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.DEPLOY_APPLICATION">EXT:/tomcat/password</UC4RB_TC_PASSWORDs.00>
+<UC4RB_TC_UPDATEs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_UPDATE#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.DEPLOY_APPLICATION">NO</UC4RB_TC_UPDATEs.00>
+<UC4RB_TC_UPLOADs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_UPLOAD#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.DEPLOY_APPLICATION">NO</UC4RB_TC_UPLOADs.00>
+<UC4RB_TC_USERNAMEs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_USERNAME#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.DEPLOY_APPLICATION">EXT:/tomcat/username</UC4RB_TC_USERNAMEs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+<node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
+<PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
+<AGENTs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;AGENT#</AGENTs.00>
+<LOGINs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;LOGIN#</LOGINs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+</dyntree>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<task Alias="" BranchType="0" Col="4" Lnr="4" OType="&lt;END&gt;" Object="END" ParentAlias="" ParentObject="" Row="1" Text2="">
+<checkpoint RollbackFlag="0" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="1" WElseH="0" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors>
+<pre BranchType="0" Lnr="1" PreLnr="3" When="ANY_OK" type="container"/>
+</predecessors>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree/>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<OPTIONS/>
+</JobpStruct>
+</JOBP>
+<RUNTIME state="1">
+<MaxRetCode>0</MaxRetCode>
+<MrcExecute/>
+<MrcElseE>0</MrcElseE>
+<FcstStatus>0| |</FcstStatus>
+<Ert>58</Ert>
+<ErtMethodDef>1</ErtMethodDef>
+<ErtMethodFix>0</ErtMethodFix>
+<ErtFix>0</ErtFix>
+<ErtDynMethod>2|Average</ErtDynMethod>
+<ErtMethodDyn>0</ErtMethodDyn>
+<ErtCnt>0</ErtCnt>
+<ErtCorr>0</ErtCorr>
+<ErtIgn>0</ErtIgn>
+<ErtIgnFlg>0</ErtIgnFlg>
+<ErtMinCnt>0</ErtMinCnt>
+<MrtMethodNone>1</MrtMethodNone>
+<MrtMethodFix>0</MrtMethodFix>
+<MrtFix>0</MrtFix>
+<MrtMethodErt>0</MrtMethodErt>
+<MrtErt>0</MrtErt>
+<MrtMethodDate>0</MrtMethodDate>
+<MrtDays>0</MrtDays>
+<MrtTime>00:00</MrtTime>
+<MrtTZ/>
+<SrtMethodNone>1</SrtMethodNone>
+<SrtMethodFix>0</SrtMethodFix>
+<SrtFix>0</SrtFix>
+<SrtMethodErt>0</SrtMethodErt>
+<SrtErt>0</SrtErt>
+<MrtCancel>0</MrtCancel>
+<MrtExecute>0</MrtExecute>
+<MrtExecuteObj/>
+</RUNTIME>
+<DYNVALUES state="1">
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
+<VALUE state="1">
+<Values>
+<row ERTUsage="0" Name="&amp;AGENT#" Value="EXT:agent"/>
+<row ERTUsage="0" Name="&amp;LOGIN#" Value="EXT:@global/login"/>
+<row ERTUsage="0" Name="&amp;OVERWRITE_AGENT#" Value="EXT:/agent_assignment/agent"/>
+<row ERTUsage="0" Name="&amp;OVERWRITE_LOGIN#" Value="EXT:/agent_assignment/login"/>
+<row ERTUsage="0" Name="&amp;TARGET_ID#" Value="EXT:@target/system/id"/>
+</Values>
+<Mode>0</Mode>
+</VALUE>
+</node>
+</dyntree>
+</DYNVALUES>
+<DEPLOYMENT state="1">
+<DeploymentFlag>1</DeploymentFlag>
+<WFTypeA>0</WFTypeA>
+<WFTypeC>1</WFTypeC>
+<AppName>TrainApp</AppName>
+<WFName/>
+<ComponentName>TrainWebApp</ComponentName>
+</DEPLOYMENT>
+<ROLLBACK state="1">
+<RollbackFlag>0</RollbackFlag>
+<CBackupObj/>
+<CRollbackObj/>
+<FBackupPath/>
+<FDeleteBefore>0</FDeleteBefore>
+<FInclSubDirs>0</FInclSubDirs>
+</ROLLBACK>
+<SCRIPT mode="1" state="1">
+<MSCRI><![CDATA[:INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.SET_OS_FOR_COMPONENT_FLOW]]></MSCRI>
+</SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBP>
+<JOBP AllowExternal="1" name="RM.DEFAULT.USECASE.USE_CASE.SQL_SERVER">
+<XHEADER state="1">
+<Title>SQL_SERVER</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<Active>1</Active>
+<OH_SubType/>
+<CustomAttributes KeyListID="0" dataRequestID="0"/>
+</XHEADER>
+<SYNCREF state="1">
+<Syncs/>
+</SYNCREF>
+<ATTR_JOBP state="1">
+<Queue>CLIENT_QUEUE</Queue>
+<ChildQueue>*OWN</ChildQueue>
+<StartType/>
+<ExtRepDef>1</ExtRepDef>
+<ExtRepAll>0</ExtRepAll>
+<ExtRepNone>0</ExtRepNone>
+<IntAccount/>
+<AutoDeactNo>0</AutoDeactNo>
+<AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
+<AutoDeactErrorFree>1</AutoDeactErrorFree>
+<DeactWhen>ANY_OK</DeactWhen>
+<AutoDeactAlways>0</AutoDeactAlways>
+<DeactDelay>0</DeactDelay>
+<ActAtRun>1</ActAtRun>
+<UC4Priority>0</UC4Priority>
+<PassPriority>0</PassPriority>
+<MaxParallel2>0</MaxParallel2>
+<ReuseHG>1</ReuseHG>
+<MpElse1>1</MpElse1>
+<MpElse2>0</MpElse2>
+<TZ/>
+<RWhen/>
+<RExecute/>
+<JPA_SubType/>
+</ATTR_JOBP>
+<JOBP state="1">
+<JobpStruct mode="design">
+<task Alias="" BranchType="0" Col="1" Lnr="1" OType="&lt;START&gt;" Object="START" ParentAlias="" ParentObject="" Row="1" Text2="">
+<checkpoint RollbackFlag="0" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="0" WElseS="1" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors/>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree/>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<task Alias="" BranchType="0" Col="2" Lnr="2" OType="JOBP" Object="PCK.AUTOMIC_GIT.PUB.ACTION.CLONE" ParentAlias="" ParentObject="" Row="1" Text2="">
+<checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="1" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors>
+<pre BranchType="0" Lnr="1" PreLnr="1" When="ANY_OK" type="container"/>
+</predecessors>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values>
+<row ERTUsage="0" Mod="0" Name="&amp;AGENT#" Value="EXT:agent"/>
+<row ERTUsage="0" Mod="0" Name="&amp;LOGIN#" Value="EXT:@global/login"/>
+<row ERTUsage="0" Mod="0" Name="&amp;OVERWRITE_AGENT#" Value="EXT:/agent_assignment/agent"/>
+<row ERTUsage="0" Mod="0" Name="&amp;OVERWRITE_LOGIN#" Value="EXT:/agent_assignment/login"/>
+<row ERTUsage="0" Mod="0" Name="&amp;TARGET_ID#" Value="EXT:@target/system/id"/>
+</Values>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
+<node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
+<node content="1" id="PCK.AUTOMIC_GIT.PRV.PROMPTSET.CREDENTIALS" name="PCK.AUTOMIC_GIT.PRV.PROMPTSET.CREDENTIALS" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_GIT.PRV.PROMPTSET.CREDENTIALS">
+<PRPTBOX promptset="PCK.AUTOMIC_GIT.PRV.PROMPTSET.CREDENTIALS">
+<UC4RB_GIT_PASSWORDs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_GIT_PASSWORD#" promptsetname="PCK.AUTOMIC_GIT.PRV.PROMPTSET.CREDENTIALS">--10</UC4RB_GIT_PASSWORDs.00>
+<UC4RB_GIT_USERNAMEs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_GIT_USERNAME#" promptsetname="PCK.AUTOMIC_GIT.PRV.PROMPTSET.CREDENTIALS"/>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+<node content="1" id="PCK.AUTOMIC_GIT.PRV.PROMPTSET.CLONE" name="PCK.AUTOMIC_GIT.PRV.PROMPTSET.CLONE" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_GIT.PRV.PROMPTSET.CLONE">
+<PRPTBOX promptset="PCK.AUTOMIC_GIT.PRV.PROMPTSET.CLONE">
+<UC4RB_GIT_OPTIONSs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_GIT_OPTIONS#" promptsetname="PCK.AUTOMIC_GIT.PRV.PROMPTSET.CLONE"/>
+<UC4RB_GIT_REPOs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_GIT_REPO#" promptsetname="PCK.AUTOMIC_GIT.PRV.PROMPTSET.CLONE">AutomicU</UC4RB_GIT_REPOs.00>
+<UC4RB_GIT_REPO_LOCALs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_GIT_REPO_LOCAL#" promptsetname="PCK.AUTOMIC_GIT.PRV.PROMPTSET.CLONE"/>
+<UC4RB_GIT_URIs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_GIT_URI#" promptsetname="PCK.AUTOMIC_GIT.PRV.PROMPTSET.CLONE">https://github.com/jkarakun</UC4RB_GIT_URIs.00>
+<UC4RB_GIT_WORKING_DIRECTORYs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_GIT_WORKING_DIRECTORY#" promptsetname="PCK.AUTOMIC_GIT.PRV.PROMPTSET.CLONE">C:\temp</UC4RB_GIT_WORKING_DIRECTORYs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+<node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
+<PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
+<AGENTs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;AGENT#</AGENTs.00>
+<LOGINs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;LOGIN#</LOGINs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+</dyntree>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<task Alias="" BranchType="0" Col="3" Lnr="3" OType="JOBP" Object="PCK.AUTOMIC_JDBC.PUB.ACTION.EXECUTE_SQL_SCRIPT" ParentAlias="" ParentObject="" Row="1" Text2="">
+<checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="1" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors>
+<pre BranchType="0" Lnr="1" PreLnr="2" When="ANY_OK" type="container"/>
+</predecessors>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values>
+<row ERTUsage="0" Mod="0" Name="&amp;AGENT#" Value="EXT:agent"/>
+<row ERTUsage="0" Mod="0" Name="&amp;LOGIN#" Value="EXT:@global/login"/>
+<row ERTUsage="0" Mod="0" Name="&amp;OVERWRITE_AGENT#" Value="EXT:/agent_assignment/agent"/>
+<row ERTUsage="0" Mod="0" Name="&amp;OVERWRITE_LOGIN#" Value="EXT:/agent_assignment/login"/>
+<row ERTUsage="0" Mod="0" Name="&amp;TARGET_ID#" Value="EXT:@target/system/id"/>
+</Values>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
+<node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
+<node content="1" id="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT" name="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT">
+<PRPTBOX promptset="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT">
+<UC4RB_DB_ADD_PROPs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_ADD_PROP#" promptsetname="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT"/>
+<UC4RB_DB_CONN_INTRVLs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_CONN_INTRVL#" promptsetname="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT">10</UC4RB_DB_CONN_INTRVLs.00>
+<UC4RB_DB_CONN_RETRYs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_CONN_RETRY#" promptsetname="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT">5</UC4RB_DB_CONN_RETRYs.00>
+<UC4RB_DB_DRIVER_CLASSs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_DRIVER_CLASS#" promptsetname="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT">EXT:/database/jdbc/driver_class</UC4RB_DB_DRIVER_CLASSs.00>
+<UC4RB_DB_DRIVER_JARs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_DRIVER_JAR#" promptsetname="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT">EXT:/database/jdbc/driver_jar</UC4RB_DB_DRIVER_JARs.00>
+<UC4RB_DB_JDBC_CONNs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_JDBC_CONN#" promptsetname="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT">EXT:/database/jdbc/connection_string</UC4RB_DB_JDBC_CONNs.00>
+<UC4RB_DB_PASSWORDs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PASSWORD#" promptsetname="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT">EXT:/database/security/password</UC4RB_DB_PASSWORDs.00>
+<UC4RB_DB_SCRIPT_SEPRs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_SCRIPT_SEPR#" promptsetname="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT">;</UC4RB_DB_SCRIPT_SEPRs.00>
+<UC4RB_DB_SCRIPT_URIs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_SCRIPT_URI#" promptsetname="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT"/>
+<UC4RB_DB_TNSNAMES_ORAs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_TNSNAMES_ORA#" promptsetname="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT"/>
+<UC4RB_DB_USERNAMEs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USERNAME#" promptsetname="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT">EXT:/database/security/username</UC4RB_DB_USERNAMEs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+<node content="1" id="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO" name="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO">
+<PRPTBOX promptset="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO">
+<UC4RB_SUDO_PASSWORDs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SUDO_PASSWORD#" promptsetname="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO">--10</UC4RB_SUDO_PASSWORDs.00>
+<UC4RB_SUDO_USERs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SUDO_USER#" promptsetname="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO"/>
+<UC4RB_USE_SUDOs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_USE_SUDO#" promptsetname="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO">None</UC4RB_USE_SUDOs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+<node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
+<PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
+<AGENTs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;AGENT#</AGENTs.00>
+<LOGINs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;LOGIN#</LOGINs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+</dyntree>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<task Alias="" BranchType="0" Col="4" Lnr="4" OType="JOBP" Object="PCK.AUTOMIC_JDBC.PUB.ACTION.EXECUTE_SQL_SCRIPT" ParentAlias="" ParentObject="" Row="1" Text2="">
+<checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="1" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors>
+<pre BranchType="0" Lnr="1" PreLnr="3" When="ANY_OK" type="container"/>
+</predecessors>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values>
+<row ERTUsage="0" Mod="0" Name="&amp;AGENT#" Value="EXT:agent"/>
+<row ERTUsage="0" Mod="0" Name="&amp;LOGIN#" Value="EXT:@global/login"/>
+<row ERTUsage="0" Mod="0" Name="&amp;OVERWRITE_AGENT#" Value="EXT:/agent_assignment/agent"/>
+<row ERTUsage="0" Mod="0" Name="&amp;OVERWRITE_LOGIN#" Value="EXT:/agent_assignment/login"/>
+<row ERTUsage="0" Mod="0" Name="&amp;TARGET_ID#" Value="EXT:@target/system/id"/>
+</Values>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
+<node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
+<node content="1" id="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT" name="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT">
+<PRPTBOX promptset="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT">
+<UC4RB_DB_ADD_PROPs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_ADD_PROP#" promptsetname="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT"/>
+<UC4RB_DB_CONN_INTRVLs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_CONN_INTRVL#" promptsetname="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT">10</UC4RB_DB_CONN_INTRVLs.00>
+<UC4RB_DB_CONN_RETRYs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_CONN_RETRY#" promptsetname="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT">5</UC4RB_DB_CONN_RETRYs.00>
+<UC4RB_DB_DRIVER_CLASSs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_DRIVER_CLASS#" promptsetname="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT">EXT:/database/jdbc/driver_class</UC4RB_DB_DRIVER_CLASSs.00>
+<UC4RB_DB_DRIVER_JARs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_DRIVER_JAR#" promptsetname="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT">EXT:/database/jdbc/driver_jar</UC4RB_DB_DRIVER_JARs.00>
+<UC4RB_DB_JDBC_CONNs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_JDBC_CONN#" promptsetname="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT">EXT:/database/jdbc/connection_string</UC4RB_DB_JDBC_CONNs.00>
+<UC4RB_DB_PASSWORDs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PASSWORD#" promptsetname="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT">EXT:/database/security/password</UC4RB_DB_PASSWORDs.00>
+<UC4RB_DB_SCRIPT_SEPRs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_SCRIPT_SEPR#" promptsetname="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT">;</UC4RB_DB_SCRIPT_SEPRs.00>
+<UC4RB_DB_SCRIPT_URIs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_SCRIPT_URI#" promptsetname="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT"/>
+<UC4RB_DB_TNSNAMES_ORAs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_TNSNAMES_ORA#" promptsetname="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT"/>
+<UC4RB_DB_USERNAMEs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USERNAME#" promptsetname="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT">EXT:/database/security/username</UC4RB_DB_USERNAMEs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+<node content="1" id="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO" name="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO">
+<PRPTBOX promptset="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO">
+<UC4RB_SUDO_PASSWORDs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SUDO_PASSWORD#" promptsetname="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO">--10</UC4RB_SUDO_PASSWORDs.00>
+<UC4RB_SUDO_USERs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SUDO_USER#" promptsetname="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO"/>
+<UC4RB_USE_SUDOs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_USE_SUDO#" promptsetname="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO">None</UC4RB_USE_SUDOs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+<node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
+<PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
+<AGENTs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;AGENT#</AGENTs.00>
+<LOGINs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;LOGIN#</LOGINs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+</dyntree>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<task Alias="" BranchType="0" Col="5" Lnr="5" OType="&lt;END&gt;" Object="END" ParentAlias="" ParentObject="" Row="1" Text2="">
+<checkpoint RollbackFlag="0" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="1" WElseH="0" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors>
+<pre BranchType="0" Lnr="1" PreLnr="4" When="ANY_OK" type="container"/>
+</predecessors>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree/>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<OPTIONS/>
+</JobpStruct>
+</JOBP>
+<RUNTIME state="1">
+<MaxRetCode>0</MaxRetCode>
+<MrcExecute/>
+<MrcElseE>0</MrcElseE>
+<FcstStatus>0| |</FcstStatus>
+<Ert>0</Ert>
+<ErtMethodDef>1</ErtMethodDef>
+<ErtMethodFix>0</ErtMethodFix>
+<ErtFix>0</ErtFix>
+<ErtDynMethod>2|Average</ErtDynMethod>
+<ErtMethodDyn>0</ErtMethodDyn>
+<ErtCnt>0</ErtCnt>
+<ErtCorr>0</ErtCorr>
+<ErtIgn>0</ErtIgn>
+<ErtIgnFlg>0</ErtIgnFlg>
+<ErtMinCnt>0</ErtMinCnt>
+<MrtMethodNone>1</MrtMethodNone>
+<MrtMethodFix>0</MrtMethodFix>
+<MrtFix>0</MrtFix>
+<MrtMethodErt>0</MrtMethodErt>
+<MrtErt>0</MrtErt>
+<MrtMethodDate>0</MrtMethodDate>
+<MrtDays>0</MrtDays>
+<MrtTime>00:00</MrtTime>
+<MrtTZ/>
+<SrtMethodNone>1</SrtMethodNone>
+<SrtMethodFix>0</SrtMethodFix>
+<SrtFix>0</SrtFix>
+<SrtMethodErt>0</SrtMethodErt>
+<SrtErt>0</SrtErt>
+<MrtCancel>0</MrtCancel>
+<MrtExecute>0</MrtExecute>
+<MrtExecuteObj/>
+</RUNTIME>
+<DYNVALUES state="1">
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
+<VALUE state="1">
+<Values>
+<row ERTUsage="0" Name="&amp;AGENT#" Value="EXT:agent"/>
+<row ERTUsage="0" Name="&amp;LOGIN#" Value="EXT:@global/login"/>
+<row ERTUsage="0" Name="&amp;OVERWRITE_AGENT#" Value="EXT:/agent_assignment/agent"/>
+<row ERTUsage="0" Name="&amp;OVERWRITE_LOGIN#" Value="EXT:/agent_assignment/login"/>
+<row ERTUsage="0" Name="&amp;TARGET_ID#" Value="EXT:@target/system/id"/>
+</Values>
+<Mode>0</Mode>
+</VALUE>
+</node>
+</dyntree>
+</DYNVALUES>
+<DEPLOYMENT state="1">
+<DeploymentFlag>1</DeploymentFlag>
+<WFTypeA>0</WFTypeA>
+<WFTypeC>1</WFTypeC>
+<AppName>UseCase</AppName>
+<WFName/>
+<ComponentName>SQL_SERVER</ComponentName>
+</DEPLOYMENT>
+<ROLLBACK state="1">
+<RollbackFlag>0</RollbackFlag>
+<CBackupObj/>
+<CRollbackObj/>
+<FBackupPath/>
+<FDeleteBefore>0</FDeleteBefore>
+<FInclSubDirs>0</FInclSubDirs>
+</ROLLBACK>
+<SCRIPT mode="1" state="1">
+<MSCRI><![CDATA[:INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.SET_OS_FOR_COMPONENT_FLOW]]></MSCRI>
+</SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBP>
+<JOBP AllowExternal="1" name="RM.DEFAULT.USECASE.USE_CASE.SQL_SERVER.1">
+<XHEADER state="1">
+<Title>SQL_SERVER</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<Active>1</Active>
+<OH_SubType/>
+<CustomAttributes KeyListID="0" dataRequestID="0"/>
+</XHEADER>
+<SYNCREF state="1">
+<Syncs/>
+</SYNCREF>
+<ATTR_JOBP state="1">
+<Queue>CLIENT_QUEUE</Queue>
+<ChildQueue>*OWN</ChildQueue>
+<StartType/>
+<ExtRepDef>1</ExtRepDef>
+<ExtRepAll>0</ExtRepAll>
+<ExtRepNone>0</ExtRepNone>
+<IntAccount/>
+<AutoDeactNo>0</AutoDeactNo>
+<AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
+<AutoDeactErrorFree>1</AutoDeactErrorFree>
+<DeactWhen>ANY_OK</DeactWhen>
+<AutoDeactAlways>0</AutoDeactAlways>
+<DeactDelay>0</DeactDelay>
+<ActAtRun>1</ActAtRun>
+<UC4Priority>0</UC4Priority>
+<PassPriority>0</PassPriority>
+<MaxParallel2>0</MaxParallel2>
+<ReuseHG>1</ReuseHG>
+<MpElse1>1</MpElse1>
+<MpElse2>0</MpElse2>
+<TZ/>
+<RWhen/>
+<RExecute/>
+<JPA_SubType/>
+</ATTR_JOBP>
+<JOBP state="1">
+<JobpStruct mode="design">
+<task Alias="" BranchType="0" Col="1" Lnr="1" OType="&lt;START&gt;" Object="START" ParentAlias="" ParentObject="" Row="2" Text2="">
+<checkpoint RollbackFlag="0" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="0" WElseS="1" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors/>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree/>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<task Alias="" BranchType="0" Col="2" Lnr="2" OType="JOBP" Object="PCK.AUTOMIC_FILESYSTEM.PUB.ACTION.DELETE" ParentAlias="" ParentObject="" Row="2" Text2="">
+<checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="1" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors>
+<pre BranchType="0" Lnr="1" PreLnr="1" When="ANY_OK" type="container"/>
+</predecessors>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values>
+<row ERTUsage="0" Mod="0" Name="&amp;AGENT#" Value="EXT:agent"/>
+<row ERTUsage="0" Mod="0" Name="&amp;LOGIN#" Value="EXT:@global/login"/>
+<row ERTUsage="0" Mod="0" Name="&amp;OVERWRITE_AGENT#" Value="EXT:/agent_assignment/agent"/>
+<row ERTUsage="0" Mod="0" Name="&amp;OVERWRITE_LOGIN#" Value="EXT:/agent_assignment/login"/>
+<row ERTUsage="0" Mod="0" Name="&amp;TARGET_ID#" Value="EXT:@target/system/id"/>
+</Values>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
+<node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
+<node content="1" id="PCK.AUTOMIC_FILESYSTEM.PRV.PROMPTSET.DELETE" name="PCK.AUTOMIC_FILESYSTEM.PRV.PROMPTSET.DELETE" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_FILESYSTEM.PRV.PROMPTSET.DELETE">
+<PRPTBOX promptset="PCK.AUTOMIC_FILESYSTEM.PRV.PROMPTSET.DELETE">
+<UC4RB_DIR_FILE_RM_FAILs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DIR_FILE_RM_FAIL#" promptsetname="PCK.AUTOMIC_FILESYSTEM.PRV.PROMPTSET.DELETE">NO</UC4RB_DIR_FILE_RM_FAILs.00>
+<UC4RB_DIR_FILE_RM_NAMEs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DIR_FILE_RM_NAME#" promptsetname="PCK.AUTOMIC_FILESYSTEM.PRV.PROMPTSET.DELETE">C:\temp\gitclone\AutomicU</UC4RB_DIR_FILE_RM_NAMEs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+<node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
+<PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
+<AGENTs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;AGENT#</AGENTs.00>
+<LOGINs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;LOGIN#</LOGINs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+</dyntree>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<task Alias="" BranchType="0" Col="3" Lnr="3" OType="JOBP" Object="PCK.AUTOMIC_GIT.PUB.ACTION.CLONE" ParentAlias="" ParentObject="" Row="1" Text2="">
+<checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="1" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors>
+<pre BranchType="0" Lnr="1" PreLnr="2" When="ANY_OK" type="container"/>
+</predecessors>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values>
+<row ERTUsage="0" Mod="0" Name="&amp;AGENT#" Value="EXT:agent"/>
+<row ERTUsage="0" Mod="0" Name="&amp;LOGIN#" Value="EXT:@global/login"/>
+<row ERTUsage="0" Mod="0" Name="&amp;OVERWRITE_AGENT#" Value="EXT:/agent_assignment/agent"/>
+<row ERTUsage="0" Mod="0" Name="&amp;OVERWRITE_LOGIN#" Value="EXT:/agent_assignment/login"/>
+<row ERTUsage="0" Mod="0" Name="&amp;TARGET_ID#" Value="EXT:@target/system/id"/>
+</Values>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
+<node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
+<node content="1" id="PCK.AUTOMIC_GIT.PRV.PROMPTSET.CREDENTIALS" name="PCK.AUTOMIC_GIT.PRV.PROMPTSET.CREDENTIALS" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_GIT.PRV.PROMPTSET.CREDENTIALS">
+<PRPTBOX promptset="PCK.AUTOMIC_GIT.PRV.PROMPTSET.CREDENTIALS">
+<UC4RB_GIT_PASSWORDs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_GIT_PASSWORD#" promptsetname="PCK.AUTOMIC_GIT.PRV.PROMPTSET.CREDENTIALS">--10</UC4RB_GIT_PASSWORDs.00>
+<UC4RB_GIT_USERNAMEs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_GIT_USERNAME#" promptsetname="PCK.AUTOMIC_GIT.PRV.PROMPTSET.CREDENTIALS"/>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+<node content="1" id="PCK.AUTOMIC_GIT.PRV.PROMPTSET.CLONE" name="PCK.AUTOMIC_GIT.PRV.PROMPTSET.CLONE" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_GIT.PRV.PROMPTSET.CLONE">
+<PRPTBOX promptset="PCK.AUTOMIC_GIT.PRV.PROMPTSET.CLONE">
+<UC4RB_GIT_OPTIONSs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_GIT_OPTIONS#" promptsetname="PCK.AUTOMIC_GIT.PRV.PROMPTSET.CLONE"/>
+<UC4RB_GIT_REPOs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_GIT_REPO#" promptsetname="PCK.AUTOMIC_GIT.PRV.PROMPTSET.CLONE">AutomicU</UC4RB_GIT_REPOs.00>
+<UC4RB_GIT_REPO_LOCALs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_GIT_REPO_LOCAL#" promptsetname="PCK.AUTOMIC_GIT.PRV.PROMPTSET.CLONE"/>
+<UC4RB_GIT_URIs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_GIT_URI#" promptsetname="PCK.AUTOMIC_GIT.PRV.PROMPTSET.CLONE">https://github.com/jkarakun</UC4RB_GIT_URIs.00>
+<UC4RB_GIT_WORKING_DIRECTORYs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_GIT_WORKING_DIRECTORY#" promptsetname="PCK.AUTOMIC_GIT.PRV.PROMPTSET.CLONE">C:\temp\gitclone</UC4RB_GIT_WORKING_DIRECTORYs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+<node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
+<PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
+<AGENTs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;AGENT#</AGENTs.00>
+<LOGINs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;LOGIN#</LOGINs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+</dyntree>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<task Alias="" BranchType="0" Col="2" Lnr="4" OType="JOBP" Object="PCK.AUTOMIC_MSSQL.PUB.ACTION.CREATE_DB" ParentAlias="" ParentObject="" Row="3" Text2="">
+<checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="1" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors>
+<pre BranchType="0" Lnr="1" PreLnr="3" When="ANY_OK" type="container"/>
+</predecessors>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values>
+<row ERTUsage="0" Mod="0" Name="&amp;AGENT#" Value="EXT:agent"/>
+<row ERTUsage="0" Mod="0" Name="&amp;LOGIN#" Value="EXT:@global/login"/>
+<row ERTUsage="0" Mod="0" Name="&amp;OVERWRITE_AGENT#" Value="EXT:/agent_assignment/agent"/>
+<row ERTUsage="0" Mod="0" Name="&amp;OVERWRITE_LOGIN#" Value="EXT:/agent_assignment/login"/>
+<row ERTUsage="0" Mod="0" Name="&amp;TARGET_ID#" Value="EXT:@target/system/id"/>
+</Values>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
+<node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
+<node content="1" id="PCK.AUTOMIC_MSSQL.PRV.PROMPTSET.CREATE_DB" name="PCK.AUTOMIC_MSSQL.PRV.PROMPTSET.CREATE_DB" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_MSSQL.PRV.PROMPTSET.CREATE_DB">
+<PRPTBOX promptset="PCK.AUTOMIC_MSSQL.PRV.PROMPTSET.CREATE_DB">
+<UC4RB_DB_CONN_INTRVLs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_CONN_INTRVL#" promptsetname="PCK.AUTOMIC_MSSQL.PRV.PROMPTSET.CREATE_DB">10</UC4RB_DB_CONN_INTRVLs.00>
+<UC4RB_DB_CONN_RETRYs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_CONN_RETRY#" promptsetname="PCK.AUTOMIC_MSSQL.PRV.PROMPTSET.CREATE_DB">5</UC4RB_DB_CONN_RETRYs.00>
+<UC4RB_DB_CREATE_DB_NAMEs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_CREATE_DB_NAME#" promptsetname="PCK.AUTOMIC_MSSQL.PRV.PROMPTSET.CREATE_DB">EXT:/mssql/name/database_name</UC4RB_DB_CREATE_DB_NAMEs.00>
+<UC4RB_DB_DBCHAINING_ONs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_DBCHAINING_ON#" promptsetname="PCK.AUTOMIC_MSSQL.PRV.PROMPTSET.CREATE_DB">OFF</UC4RB_DB_DBCHAINING_ONs.00>
+<UC4RB_DB_DRIVER_CLASSs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_DRIVER_CLASS#" promptsetname="PCK.AUTOMIC_MSSQL.PRV.PROMPTSET.CREATE_DB">EXT:/database/jdbc/driver_class</UC4RB_DB_DRIVER_CLASSs.00>
+<UC4RB_DB_DRIVER_JARs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_DRIVER_JAR#" promptsetname="PCK.AUTOMIC_MSSQL.PRV.PROMPTSET.CREATE_DB">EXT:/database/jdbc/driver_jar</UC4RB_DB_DRIVER_JARs.00>
+<UC4RB_DB_FAIL_IF_DB_EXISTSs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_FAIL_IF_DB_EXISTS#" promptsetname="PCK.AUTOMIC_MSSQL.PRV.PROMPTSET.CREATE_DB">NO</UC4RB_DB_FAIL_IF_DB_EXISTSs.00>
+<UC4RB_DB_FILE_SPECs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_FILE_SPEC#" promptsetname="PCK.AUTOMIC_MSSQL.PRV.PROMPTSET.CREATE_DB">EXT:/mssql/spec/file_spec</UC4RB_DB_FILE_SPECs.00>
+<UC4RB_DB_FILEGROUP_SPECs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_FILEGROUP_SPEC#" promptsetname="PCK.AUTOMIC_MSSQL.PRV.PROMPTSET.CREATE_DB">EXT:/mssql/spec/filegroup_spec</UC4RB_DB_FILEGROUP_SPECs.00>
+<UC4RB_DB_JDBC_CONNs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_JDBC_CONN#" promptsetname="PCK.AUTOMIC_MSSQL.PRV.PROMPTSET.CREATE_DB">jdbc:sqlserver://localhost:1433</UC4RB_DB_JDBC_CONNs.00>
+<UC4RB_DB_LOG_ON_FILE_SPECs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_LOG_ON_FILE_SPEC#" promptsetname="PCK.AUTOMIC_MSSQL.PRV.PROMPTSET.CREATE_DB">EXT:/mssql/spec/log_spec</UC4RB_DB_LOG_ON_FILE_SPECs.00>
+<UC4RB_DB_PASSWORDs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PASSWORD#" promptsetname="PCK.AUTOMIC_MSSQL.PRV.PROMPTSET.CREATE_DB">EXT:/database/security/password</UC4RB_DB_PASSWORDs.00>
+<UC4RB_DB_TRUSTWORTHY_ONs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_TRUSTWORTHY_ON#" promptsetname="PCK.AUTOMIC_MSSQL.PRV.PROMPTSET.CREATE_DB">OFF</UC4RB_DB_TRUSTWORTHY_ONs.00>
+<UC4RB_DB_USERNAMEs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USERNAME#" promptsetname="PCK.AUTOMIC_MSSQL.PRV.PROMPTSET.CREATE_DB">EXT:/database/security/username</UC4RB_DB_USERNAMEs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+<node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
+<PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
+<AGENTs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;AGENT#</AGENTs.00>
+<LOGINs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;LOGIN#</LOGINs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+</dyntree>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<task Alias="" BranchType="0" Col="3" Lnr="5" OType="JOBP" Object="PCK.CUSTOM_TESTING_FILE_MANIPULATION.PUB.ACTION.MODIFY_SLQ_NAME" ParentAlias="" ParentObject="" Row="3" Text2="">
+<checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="1" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors>
+<pre BranchType="0" Lnr="1" PreLnr="4" When="ANY_OK" type="container"/>
+</predecessors>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values>
+<row ERTUsage="0" Mod="0" Name="&amp;AGENT#" Value="EXT:agent"/>
+<row ERTUsage="0" Mod="0" Name="&amp;LOGIN#" Value="EXT:@global/login"/>
+<row ERTUsage="0" Mod="0" Name="&amp;OVERWRITE_AGENT#" Value="EXT:/agent_assignment/agent"/>
+<row ERTUsage="0" Mod="0" Name="&amp;OVERWRITE_LOGIN#" Value="EXT:/agent_assignment/login"/>
+<row ERTUsage="0" Mod="0" Name="&amp;TARGET_ID#" Value="EXT:@target/system/id"/>
+</Values>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
+<node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
+<node content="1" id="PCK.CUSTOM_TESTING_FILE_MANIPULATION.PRV.PROMPTSET.MODIFY_SLQ_NAME" name="PCK.CUSTOM_TESTING_FILE_MANIPULATION.PRV.PROMPTSET.MODIFY_SLQ_NAME" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.CUSTOM_TESTING_FILE_MANIPULATION.PRV.PROMPTSET.MODIFY_SLQ_NAME">
+<PRPTBOX promptset="PCK.CUSTOM_TESTING_FILE_MANIPULATION.PRV.PROMPTSET.MODIFY_SLQ_NAME">
+<PATHTOFILEs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="PATHTOFILE#" promptsetname="PCK.CUSTOM_TESTING_FILE_MANIPULATION.PRV.PROMPTSET.MODIFY_SLQ_NAME">EXT:/target/create_file</PATHTOFILEs.00>
+<PATHTOJARs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="PATHTOJAR#" promptsetname="PCK.CUSTOM_TESTING_FILE_MANIPULATION.PRV.PROMPTSET.MODIFY_SLQ_NAME">EXT:/target/path_to_jar</PATHTOJARs.00>
+<PATHTOSECONDFILEs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="PATHTOSECONDFILE#" promptsetname="PCK.CUSTOM_TESTING_FILE_MANIPULATION.PRV.PROMPTSET.MODIFY_SLQ_NAME">EXT:/target/drop_fle</PATHTOSECONDFILEs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+<node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
+<PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
+<AGENTs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;AGENT#</AGENTs.00>
+<LOGINs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;LOGIN#</LOGINs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+</dyntree>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<task Alias="" BranchType="0" Col="4" Lnr="6" OType="JOBP" Object="PCK.AUTOMIC_JDBC.PUB.ACTION.EXECUTE_SQL_SCRIPT" ParentAlias="" ParentObject="" Row="3" Text2="">
+<checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="1" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors>
+<pre BranchType="0" Lnr="1" PreLnr="5" When="ANY_OK" type="container"/>
+</predecessors>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values>
+<row ERTUsage="0" Mod="0" Name="&amp;AGENT#" Value="EXT:agent"/>
+<row ERTUsage="0" Mod="0" Name="&amp;LOGIN#" Value="EXT:@global/login"/>
+<row ERTUsage="0" Mod="0" Name="&amp;OVERWRITE_AGENT#" Value="EXT:/agent_assignment/agent"/>
+<row ERTUsage="0" Mod="0" Name="&amp;OVERWRITE_LOGIN#" Value="EXT:/agent_assignment/login"/>
+<row ERTUsage="0" Mod="0" Name="&amp;TARGET_ID#" Value="EXT:@target/system/id"/>
+</Values>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
+<node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
+<node content="1" id="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT" name="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT">
+<PRPTBOX promptset="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT">
+<UC4RB_DB_ADD_PROPs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_ADD_PROP#" promptsetname="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT"/>
+<UC4RB_DB_CONN_INTRVLs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_CONN_INTRVL#" promptsetname="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT">10</UC4RB_DB_CONN_INTRVLs.00>
+<UC4RB_DB_CONN_RETRYs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_CONN_RETRY#" promptsetname="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT">5</UC4RB_DB_CONN_RETRYs.00>
+<UC4RB_DB_DRIVER_CLASSs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_DRIVER_CLASS#" promptsetname="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT">EXT:/database/jdbc/driver_class</UC4RB_DB_DRIVER_CLASSs.00>
+<UC4RB_DB_DRIVER_JARs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_DRIVER_JAR#" promptsetname="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT">EXT:/database/jdbc/driver_jar</UC4RB_DB_DRIVER_JARs.00>
+<UC4RB_DB_JDBC_CONNs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_JDBC_CONN#" promptsetname="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT">EXT:/database/jdbc/connection_string</UC4RB_DB_JDBC_CONNs.00>
+<UC4RB_DB_PASSWORDs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PASSWORD#" promptsetname="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT">EXT:/database/security/password</UC4RB_DB_PASSWORDs.00>
+<UC4RB_DB_SCRIPT_SEPRs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_SCRIPT_SEPR#" promptsetname="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT">;</UC4RB_DB_SCRIPT_SEPRs.00>
+<UC4RB_DB_SCRIPT_URIs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_SCRIPT_URI#" promptsetname="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT">EXT:/target/create_file</UC4RB_DB_SCRIPT_URIs.00>
+<UC4RB_DB_TNSNAMES_ORAs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_TNSNAMES_ORA#" promptsetname="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT"/>
+<UC4RB_DB_USERNAMEs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USERNAME#" promptsetname="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT">EXT:/database/security/username</UC4RB_DB_USERNAMEs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+<node content="1" id="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO" name="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO">
+<PRPTBOX promptset="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO">
+<UC4RB_SUDO_PASSWORDs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SUDO_PASSWORD#" promptsetname="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO">--10</UC4RB_SUDO_PASSWORDs.00>
+<UC4RB_SUDO_USERs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SUDO_USER#" promptsetname="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO"/>
+<UC4RB_USE_SUDOs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_USE_SUDO#" promptsetname="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO">None</UC4RB_USE_SUDOs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+<node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
+<PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
+<AGENTs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;AGENT#</AGENTs.00>
+<LOGINs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;LOGIN#</LOGINs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+</dyntree>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<task Alias="" BranchType="0" Col="5" Lnr="7" OType="JOBP" Object="PCK.AUTOMIC_JDBC.PUB.ACTION.EXECUTE_SQL_SCRIPT" ParentAlias="" ParentObject="" Row="2" Text2="">
+<checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="1" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors>
+<pre BranchType="0" Lnr="1" PreLnr="6" When="ANY_OK" type="container"/>
+</predecessors>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values/>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values>
+<row ERTUsage="0" Mod="0" Name="&amp;AGENT#" Value="EXT:agent"/>
+<row ERTUsage="0" Mod="0" Name="&amp;LOGIN#" Value="EXT:@global/login"/>
+<row ERTUsage="0" Mod="0" Name="&amp;OVERWRITE_AGENT#" Value="EXT:/agent_assignment/agent"/>
+<row ERTUsage="0" Mod="0" Name="&amp;OVERWRITE_LOGIN#" Value="EXT:/agent_assignment/login"/>
+<row ERTUsage="0" Mod="0" Name="&amp;TARGET_ID#" Value="EXT:@target/system/id"/>
+</Values>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
+<node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
+<node content="1" id="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT" name="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT">
+<PRPTBOX promptset="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT">
+<UC4RB_DB_ADD_PROPs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_ADD_PROP#" promptsetname="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT"/>
+<UC4RB_DB_CONN_INTRVLs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_CONN_INTRVL#" promptsetname="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT">10</UC4RB_DB_CONN_INTRVLs.00>
+<UC4RB_DB_CONN_RETRYs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_CONN_RETRY#" promptsetname="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT">5</UC4RB_DB_CONN_RETRYs.00>
+<UC4RB_DB_DRIVER_CLASSs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_DRIVER_CLASS#" promptsetname="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT">EXT:/database/jdbc/driver_class</UC4RB_DB_DRIVER_CLASSs.00>
+<UC4RB_DB_DRIVER_JARs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_DRIVER_JAR#" promptsetname="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT">EXT:/database/jdbc/driver_jar</UC4RB_DB_DRIVER_JARs.00>
+<UC4RB_DB_JDBC_CONNs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_JDBC_CONN#" promptsetname="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT">EXT:/database/jdbc/connection_string</UC4RB_DB_JDBC_CONNs.00>
+<UC4RB_DB_PASSWORDs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_PASSWORD#" promptsetname="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT">EXT:/database/security/password</UC4RB_DB_PASSWORDs.00>
+<UC4RB_DB_SCRIPT_SEPRs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_SCRIPT_SEPR#" promptsetname="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT">;</UC4RB_DB_SCRIPT_SEPRs.00>
+<UC4RB_DB_SCRIPT_URIs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_SCRIPT_URI#" promptsetname="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT">EXT:/target/drop_fle</UC4RB_DB_SCRIPT_URIs.00>
+<UC4RB_DB_TNSNAMES_ORAs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_TNSNAMES_ORA#" promptsetname="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT"/>
+<UC4RB_DB_USERNAMEs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_DB_USERNAME#" promptsetname="PCK.AUTOMIC_JDBC.PRV.PROMPTSET.EXECUTE_SQL_SCRIPT">EXT:/database/security/username</UC4RB_DB_USERNAMEs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+<node content="1" id="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO" name="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO">
+<PRPTBOX promptset="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO">
+<UC4RB_SUDO_PASSWORDs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SUDO_PASSWORD#" promptsetname="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO">--10</UC4RB_SUDO_PASSWORDs.00>
+<UC4RB_SUDO_USERs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SUDO_USER#" promptsetname="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO"/>
+<UC4RB_USE_SUDOs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_USE_SUDO#" promptsetname="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO">None</UC4RB_USE_SUDOs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+<node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
+<PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
+<AGENTs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;AGENT#</AGENTs.00>
+<LOGINs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;LOGIN#</LOGINs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+</dyntree>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<task Alias="" BranchType="0" Col="6" Lnr="8" OType="&lt;END&gt;" Object="END" ParentAlias="" ParentObject="" Row="2" Text2="">
+<checkpoint RollbackFlag="0" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="1" WElseH="0" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors>
+<pre BranchType="0" Lnr="1" PreLnr="7" When="ANY_OK" type="container"/>
+</predecessors>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree/>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<OPTIONS/>
+</JobpStruct>
+</JOBP>
+<RUNTIME state="1">
+<MaxRetCode>0</MaxRetCode>
+<MrcExecute/>
+<MrcElseE>0</MrcElseE>
+<FcstStatus>0| |</FcstStatus>
+<Ert>155</Ert>
+<ErtMethodDef>1</ErtMethodDef>
+<ErtMethodFix>0</ErtMethodFix>
+<ErtFix>0</ErtFix>
+<ErtDynMethod>2|Average</ErtDynMethod>
+<ErtMethodDyn>0</ErtMethodDyn>
+<ErtCnt>0</ErtCnt>
+<ErtCorr>0</ErtCorr>
+<ErtIgn>0</ErtIgn>
+<ErtIgnFlg>0</ErtIgnFlg>
+<ErtMinCnt>0</ErtMinCnt>
+<MrtMethodNone>1</MrtMethodNone>
+<MrtMethodFix>0</MrtMethodFix>
+<MrtFix>0</MrtFix>
+<MrtMethodErt>0</MrtMethodErt>
+<MrtErt>0</MrtErt>
+<MrtMethodDate>0</MrtMethodDate>
+<MrtDays>0</MrtDays>
+<MrtTime>00:00</MrtTime>
+<MrtTZ/>
+<SrtMethodNone>1</SrtMethodNone>
+<SrtMethodFix>0</SrtMethodFix>
+<SrtFix>0</SrtFix>
+<SrtMethodErt>0</SrtMethodErt>
+<SrtErt>0</SrtErt>
+<MrtCancel>0</MrtCancel>
+<MrtExecute>0</MrtExecute>
+<MrtExecuteObj/>
+</RUNTIME>
+<DYNVALUES state="1">
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
+<VALUE state="1">
+<Values>
+<row ERTUsage="0" Name="&amp;AGENT#" Value="EXT:agent"/>
+<row ERTUsage="0" Name="&amp;LOGIN#" Value="EXT:@global/login"/>
+<row ERTUsage="0" Name="&amp;OVERWRITE_AGENT#" Value="EXT:/agent_assignment/agent"/>
+<row ERTUsage="0" Name="&amp;OVERWRITE_LOGIN#" Value="EXT:/agent_assignment/login"/>
+<row ERTUsage="0" Name="&amp;TARGET_ID#" Value="EXT:@target/system/id"/>
+</Values>
+<Mode>0</Mode>
+</VALUE>
+</node>
+</dyntree>
+</DYNVALUES>
+<DEPLOYMENT state="1">
+<DeploymentFlag>1</DeploymentFlag>
+<WFTypeA>0</WFTypeA>
+<WFTypeC>1</WFTypeC>
+<AppName>UseCase</AppName>
+<WFName/>
+<ComponentName>SQL_SERVER</ComponentName>
+</DEPLOYMENT>
+<ROLLBACK state="1">
+<RollbackFlag>0</RollbackFlag>
+<CBackupObj/>
+<CRollbackObj/>
+<FBackupPath/>
+<FDeleteBefore>0</FDeleteBefore>
+<FInclSubDirs>0</FInclSubDirs>
+</ROLLBACK>
+<SCRIPT mode="1" state="1">
+<MSCRI><![CDATA[:INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.SET_OS_FOR_COMPONENT_FLOW]]></MSCRI>
+</SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBP>
+<JOBP AllowExternal="1" name="RM.DEFAULT.USECASE.USE_CASE.USECASEWEBAPP">
+<XHEADER state="1">
+<Title>UseCaseWebApp</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<Active>1</Active>
+<OH_SubType/>
+<CustomAttributes KeyListID="0" dataRequestID="0"/>
+</XHEADER>
+<SYNCREF state="1">
+<Syncs/>
+</SYNCREF>
+<ATTR_JOBP state="1">
+<Queue>CLIENT_QUEUE</Queue>
+<ChildQueue>*OWN</ChildQueue>
+<StartType/>
+<ExtRepDef>1</ExtRepDef>
+<ExtRepAll>0</ExtRepAll>
+<ExtRepNone>0</ExtRepNone>
+<IntAccount/>
+<AutoDeactNo>0</AutoDeactNo>
+<AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
+<AutoDeactErrorFree>1</AutoDeactErrorFree>
+<DeactWhen>ANY_OK</DeactWhen>
+<AutoDeactAlways>0</AutoDeactAlways>
+<DeactDelay>0</DeactDelay>
+<ActAtRun>1</ActAtRun>
+<UC4Priority>0</UC4Priority>
+<PassPriority>0</PassPriority>
+<MaxParallel2>0</MaxParallel2>
+<ReuseHG>1</ReuseHG>
+<MpElse1>1</MpElse1>
+<MpElse2>0</MpElse2>
+<TZ/>
+<RWhen/>
+<RExecute/>
+<JPA_SubType/>
+</ATTR_JOBP>
+<JOBP state="1">
+<JobpStruct mode="design">
+<task Alias="" BranchType="0" Col="1" Lnr="1" OType="&lt;START&gt;" Object="START" ParentAlias="" ParentObject="" Row="1" Text2="">
+<checkpoint RollbackFlag="0" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="0" WElseS="1" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors/>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree/>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<task Alias="" BranchType="0" Col="2" Lnr="2" OType="JOBP" Object="PCK.AUTOMIC_TOMCAT.PUB.ACTION.UNDEPLOY_APPLICATION" ParentAlias="" ParentObject="" Row="1" Text2="">
+<checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="1" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors>
+<pre BranchType="0" Lnr="1" PreLnr="1" When="ANY_OK" type="container"/>
+</predecessors>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_BACKUP_DIRECTORY#" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_BACKUP_REPORT#" Value=""/>
+</Values>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values>
+<row ERTUsage="0" Mod="0" Name="&amp;AGENT#" Value="EXT:agent"/>
+<row ERTUsage="0" Mod="0" Name="&amp;LOGIN#" Value="EXT:@global/login"/>
+<row ERTUsage="0" Mod="0" Name="&amp;OVERWRITE_AGENT#" Value="EXT:/agent_assignment/agent"/>
+<row ERTUsage="0" Mod="0" Name="&amp;OVERWRITE_LOGIN#" Value="EXT:/agent_assignment/login"/>
+<row ERTUsage="0" Mod="0" Name="&amp;TARGET_ID#" Value="EXT:@target/system/id"/>
+</Values>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
+<node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
+<node content="1" id="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.UNDEPLOY_APPLICATION" name="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.UNDEPLOY_APPLICATION" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.UNDEPLOY_APPLICATION">
+<PRPTBOX promptset="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.UNDEPLOY_APPLICATION">
+<UC4RB_TC_APPBASEs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_APPBASE#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.UNDEPLOY_APPLICATION">EXT:/tomcat/appbase_directory</UC4RB_TC_APPBASEs.00>
+<UC4RB_TC_BASE_URLs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_BASE_URL#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.UNDEPLOY_APPLICATION">EXT:/tomcat/base_url</UC4RB_TC_BASE_URLs.00>
+<UC4RB_TC_CONTEXT_PATHs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_CONTEXT_PATH#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.UNDEPLOY_APPLICATION">EXT:/tomcat/relative_context_path</UC4RB_TC_CONTEXT_PATHs.00>
+<UC4RB_TC_FAIL_IF_NOT_DEPLOYEDs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_FAIL_IF_NOT_DEPLOYED#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.UNDEPLOY_APPLICATION">NO</UC4RB_TC_FAIL_IF_NOT_DEPLOYEDs.00>
+<UC4RB_TC_HOME_DIRs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_HOME_DIR#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.UNDEPLOY_APPLICATION">EXT:/tomcat/server/home_directory</UC4RB_TC_HOME_DIRs.00>
+<UC4RB_TC_MGR_APPs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_MGR_APP#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.UNDEPLOY_APPLICATION">manager</UC4RB_TC_MGR_APPs.00>
+<UC4RB_TC_PASSWORDs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_PASSWORD#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.UNDEPLOY_APPLICATION">EXT:/tomcat/password</UC4RB_TC_PASSWORDs.00>
+<UC4RB_TC_USERNAMEs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_USERNAME#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.UNDEPLOY_APPLICATION">EXT:/tomcat/username</UC4RB_TC_USERNAMEs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+<node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
+<PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
+<AGENTs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;AGENT#</AGENTs.00>
+<LOGINs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;LOGIN#</LOGINs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+</dyntree>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<task Alias="" BranchType="0" Col="3" Lnr="3" OType="JOBP" Object="PCK.AUTOMIC_TOMCAT.PUB.ACTION.DEPLOY_APPLICATION" ParentAlias="" ParentObject="" Row="1" Text2="">
+<checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="1" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors>
+<pre BranchType="0" Lnr="1" PreLnr="2" When="ANY_OK" type="container"/>
+</predecessors>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_BACKUP_DIRECTORY#" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_BACKUP_REPORT#" Value=""/>
+</Values>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values>
+<row ERTUsage="0" Mod="0" Name="&amp;AGENT#" Value="EXT:agent"/>
+<row ERTUsage="0" Mod="0" Name="&amp;LOGIN#" Value="EXT:@global/login"/>
+<row ERTUsage="0" Mod="0" Name="&amp;OVERWRITE_AGENT#" Value="EXT:/agent_assignment/agent"/>
+<row ERTUsage="0" Mod="0" Name="&amp;OVERWRITE_LOGIN#" Value="EXT:/agent_assignment/login"/>
+<row ERTUsage="0" Mod="0" Name="&amp;TARGET_ID#" Value="EXT:@target/system/id"/>
+</Values>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
+<node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
+<node content="1" id="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.DEPLOY_APPLICATION" name="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.DEPLOY_APPLICATION" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.DEPLOY_APPLICATION">
+<PRPTBOX promptset="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.DEPLOY_APPLICATION">
+<UC4RB_TC_APPBASEs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_APPBASE#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.DEPLOY_APPLICATION">EXT:/tomcat/appbase_directory</UC4RB_TC_APPBASEs.00>
+<UC4RB_TC_BASE_URLs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_BASE_URL#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.DEPLOY_APPLICATION">EXT:/tomcat/base_url</UC4RB_TC_BASE_URLs.00>
+<UC4RB_TC_CONTEXT_PATHs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_CONTEXT_PATH#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.DEPLOY_APPLICATION">EXT:/tomcat/relative_context_path</UC4RB_TC_CONTEXT_PATHs.00>
+<UC4RB_TC_FAIL_IF_DEPLOYEDs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_FAIL_IF_DEPLOYED#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.DEPLOY_APPLICATION">NO</UC4RB_TC_FAIL_IF_DEPLOYEDs.00>
+<UC4RB_TC_FARM_DEPLOYs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_FARM_DEPLOY#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.DEPLOY_APPLICATION">NO</UC4RB_TC_FARM_DEPLOYs.00>
+<UC4RB_TC_HOME_DIRs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_HOME_DIR#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.DEPLOY_APPLICATION">EXT:/tomcat/server/home_directory</UC4RB_TC_HOME_DIRs.00>
+<UC4RB_TC_MGR_APPs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_MGR_APP#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.DEPLOY_APPLICATION">manager</UC4RB_TC_MGR_APPs.00>
+<UC4RB_TC_PACKAGEs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_PACKAGE#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.DEPLOY_APPLICATION">EXT:/tomcat/package_full_path</UC4RB_TC_PACKAGEs.00>
+<UC4RB_TC_PASSWORDs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_PASSWORD#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.DEPLOY_APPLICATION">EXT:/tomcat/password</UC4RB_TC_PASSWORDs.00>
+<UC4RB_TC_UPDATEs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_UPDATE#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.DEPLOY_APPLICATION">NO</UC4RB_TC_UPDATEs.00>
+<UC4RB_TC_UPLOADs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_UPLOAD#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.DEPLOY_APPLICATION">NO</UC4RB_TC_UPLOADs.00>
+<UC4RB_TC_USERNAMEs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_USERNAME#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.DEPLOY_APPLICATION">EXT:/tomcat/username</UC4RB_TC_USERNAMEs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+<node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
+<PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
+<AGENTs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;AGENT#</AGENTs.00>
+<LOGINs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;LOGIN#</LOGINs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+</dyntree>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<task Alias="" BranchType="0" Col="4" Lnr="4" OType="&lt;END&gt;" Object="END" ParentAlias="" ParentObject="" Row="1" Text2="">
+<checkpoint RollbackFlag="0" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="1" WElseH="0" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors>
+<pre BranchType="0" Lnr="1" PreLnr="3" When="ANY_OK" type="container"/>
+</predecessors>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree/>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<OPTIONS/>
+</JobpStruct>
+</JOBP>
+<RUNTIME state="1">
+<MaxRetCode>0</MaxRetCode>
+<MrcExecute/>
+<MrcElseE>0</MrcElseE>
+<FcstStatus>0| |</FcstStatus>
+<Ert>0</Ert>
+<ErtMethodDef>1</ErtMethodDef>
+<ErtMethodFix>0</ErtMethodFix>
+<ErtFix>0</ErtFix>
+<ErtDynMethod>2|Average</ErtDynMethod>
+<ErtMethodDyn>0</ErtMethodDyn>
+<ErtCnt>0</ErtCnt>
+<ErtCorr>0</ErtCorr>
+<ErtIgn>0</ErtIgn>
+<ErtIgnFlg>0</ErtIgnFlg>
+<ErtMinCnt>0</ErtMinCnt>
+<MrtMethodNone>1</MrtMethodNone>
+<MrtMethodFix>0</MrtMethodFix>
+<MrtFix>0</MrtFix>
+<MrtMethodErt>0</MrtMethodErt>
+<MrtErt>0</MrtErt>
+<MrtMethodDate>0</MrtMethodDate>
+<MrtDays>0</MrtDays>
+<MrtTime>00:00</MrtTime>
+<MrtTZ/>
+<SrtMethodNone>1</SrtMethodNone>
+<SrtMethodFix>0</SrtMethodFix>
+<SrtFix>0</SrtFix>
+<SrtMethodErt>0</SrtMethodErt>
+<SrtErt>0</SrtErt>
+<MrtCancel>0</MrtCancel>
+<MrtExecute>0</MrtExecute>
+<MrtExecuteObj/>
+</RUNTIME>
+<DYNVALUES state="1">
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
+<VALUE state="1">
+<Values>
+<row ERTUsage="0" Name="&amp;AGENT#" Value="EXT:agent"/>
+<row ERTUsage="0" Name="&amp;LOGIN#" Value="EXT:@global/login"/>
+<row ERTUsage="0" Name="&amp;OVERWRITE_AGENT#" Value="EXT:/agent_assignment/agent"/>
+<row ERTUsage="0" Name="&amp;OVERWRITE_LOGIN#" Value="EXT:/agent_assignment/login"/>
+<row ERTUsage="0" Name="&amp;TARGET_ID#" Value="EXT:@target/system/id"/>
+</Values>
+<Mode>0</Mode>
+</VALUE>
+</node>
+</dyntree>
+</DYNVALUES>
+<DEPLOYMENT state="1">
+<DeploymentFlag>1</DeploymentFlag>
+<WFTypeA>0</WFTypeA>
+<WFTypeC>1</WFTypeC>
+<AppName>UseCase</AppName>
+<WFName/>
+<ComponentName>UseCaseWebApp</ComponentName>
+</DEPLOYMENT>
+<ROLLBACK state="1">
+<RollbackFlag>0</RollbackFlag>
+<CBackupObj/>
+<CRollbackObj/>
+<FBackupPath/>
+<FDeleteBefore>0</FDeleteBefore>
+<FInclSubDirs>0</FInclSubDirs>
+</ROLLBACK>
+<SCRIPT mode="1" state="1">
+<MSCRI><![CDATA[:INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.SET_OS_FOR_COMPONENT_FLOW]]></MSCRI>
+</SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBP>
+<JOBP AllowExternal="1" name="RM.DEFAULT.USECASE.USE_CASE.USECASEWEBAPP.1">
+<XHEADER state="1">
+<Title>UseCaseWebApp</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<Active>1</Active>
+<OH_SubType/>
+<CustomAttributes KeyListID="0" dataRequestID="0"/>
+</XHEADER>
+<SYNCREF state="1">
+<Syncs/>
+</SYNCREF>
+<ATTR_JOBP state="1">
+<Queue>CLIENT_QUEUE</Queue>
+<ChildQueue>*OWN</ChildQueue>
+<StartType/>
+<ExtRepDef>1</ExtRepDef>
+<ExtRepAll>0</ExtRepAll>
+<ExtRepNone>0</ExtRepNone>
+<IntAccount/>
+<AutoDeactNo>0</AutoDeactNo>
+<AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
+<AutoDeactErrorFree>1</AutoDeactErrorFree>
+<DeactWhen>ANY_OK</DeactWhen>
+<AutoDeactAlways>0</AutoDeactAlways>
+<DeactDelay>0</DeactDelay>
+<ActAtRun>1</ActAtRun>
+<UC4Priority>0</UC4Priority>
+<PassPriority>0</PassPriority>
+<MaxParallel2>0</MaxParallel2>
+<ReuseHG>1</ReuseHG>
+<MpElse1>1</MpElse1>
+<MpElse2>0</MpElse2>
+<TZ/>
+<RWhen/>
+<RExecute/>
+<JPA_SubType/>
+</ATTR_JOBP>
+<JOBP state="1">
+<JobpStruct mode="design">
+<task Alias="" BranchType="0" Col="1" Lnr="1" OType="&lt;START&gt;" Object="START" ParentAlias="" ParentObject="" Row="1" Text2="">
+<checkpoint RollbackFlag="0" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="0" WElseS="1" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors/>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree/>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<task Alias="" BranchType="0" Col="4" Lnr="2" OType="&lt;END&gt;" Object="END" ParentAlias="" ParentObject="" Row="1" Text2="">
+<checkpoint RollbackFlag="0" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="1" WElseH="0" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors/>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree/>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<OPTIONS/>
+</JobpStruct>
+</JOBP>
+<RUNTIME state="1">
+<MaxRetCode>0</MaxRetCode>
+<MrcExecute/>
+<MrcElseE>0</MrcElseE>
+<FcstStatus>0| |</FcstStatus>
+<Ert>0</Ert>
+<ErtMethodDef>1</ErtMethodDef>
+<ErtMethodFix>0</ErtMethodFix>
+<ErtFix>0</ErtFix>
+<ErtDynMethod>2|Average</ErtDynMethod>
+<ErtMethodDyn>0</ErtMethodDyn>
+<ErtCnt>0</ErtCnt>
+<ErtCorr>0</ErtCorr>
+<ErtIgn>0</ErtIgn>
+<ErtIgnFlg>0</ErtIgnFlg>
+<ErtMinCnt>0</ErtMinCnt>
+<MrtMethodNone>1</MrtMethodNone>
+<MrtMethodFix>0</MrtMethodFix>
+<MrtFix>0</MrtFix>
+<MrtMethodErt>0</MrtMethodErt>
+<MrtErt>0</MrtErt>
+<MrtMethodDate>0</MrtMethodDate>
+<MrtDays>0</MrtDays>
+<MrtTime>00:00</MrtTime>
+<MrtTZ/>
+<SrtMethodNone>1</SrtMethodNone>
+<SrtMethodFix>0</SrtMethodFix>
+<SrtFix>0</SrtFix>
+<SrtMethodErt>0</SrtMethodErt>
+<SrtErt>0</SrtErt>
+<MrtCancel>0</MrtCancel>
+<MrtExecute>0</MrtExecute>
+<MrtExecuteObj/>
+</RUNTIME>
+<DYNVALUES state="1">
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
+<VALUE state="1">
+<Values>
+<row ERTUsage="0" Name="&amp;AGENT#" Value="EXT:agent"/>
+<row ERTUsage="0" Name="&amp;LOGIN#" Value="EXT:@global/login"/>
+<row ERTUsage="0" Name="&amp;OVERWRITE_AGENT#" Value="EXT:/agent_assignment/agent"/>
+<row ERTUsage="0" Name="&amp;OVERWRITE_LOGIN#" Value="EXT:/agent_assignment/login"/>
+<row ERTUsage="0" Name="&amp;TARGET_ID#" Value="EXT:@target/system/id"/>
+</Values>
+<Mode>0</Mode>
+</VALUE>
+</node>
+</dyntree>
+</DYNVALUES>
+<DEPLOYMENT state="1">
+<DeploymentFlag>1</DeploymentFlag>
+<WFTypeA>0</WFTypeA>
+<WFTypeC>1</WFTypeC>
+<AppName>UseCase</AppName>
+<WFName/>
+<ComponentName>UseCaseWebApp</ComponentName>
+</DEPLOYMENT>
+<ROLLBACK state="1">
+<RollbackFlag>0</RollbackFlag>
+<CBackupObj/>
+<CRollbackObj/>
+<FBackupPath/>
+<FDeleteBefore>0</FDeleteBefore>
+<FInclSubDirs>0</FInclSubDirs>
+</ROLLBACK>
+<SCRIPT mode="1" state="1">
+<MSCRI><![CDATA[:INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.SET_OS_FOR_COMPONENT_FLOW]]></MSCRI>
+</SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBP>
+<JOBP AllowExternal="1" name="RM.DEFAULT.USECASE.USE_CASE.USECASEWEBAPP.2">
+<XHEADER state="1">
+<Title>UseCaseWebApp</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<Active>1</Active>
+<OH_SubType/>
+<CustomAttributes KeyListID="0" dataRequestID="0"/>
+</XHEADER>
+<SYNCREF state="1">
+<Syncs/>
+</SYNCREF>
+<ATTR_JOBP state="1">
+<Queue>CLIENT_QUEUE</Queue>
+<ChildQueue>*OWN</ChildQueue>
+<StartType/>
+<ExtRepDef>1</ExtRepDef>
+<ExtRepAll>0</ExtRepAll>
+<ExtRepNone>0</ExtRepNone>
+<IntAccount/>
+<AutoDeactNo>0</AutoDeactNo>
+<AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
+<AutoDeactErrorFree>1</AutoDeactErrorFree>
+<DeactWhen>ANY_OK</DeactWhen>
+<AutoDeactAlways>0</AutoDeactAlways>
+<DeactDelay>0</DeactDelay>
+<ActAtRun>1</ActAtRun>
+<UC4Priority>0</UC4Priority>
+<PassPriority>0</PassPriority>
+<MaxParallel2>0</MaxParallel2>
+<ReuseHG>1</ReuseHG>
+<MpElse1>1</MpElse1>
+<MpElse2>0</MpElse2>
+<TZ/>
+<RWhen/>
+<RExecute/>
+<JPA_SubType/>
+</ATTR_JOBP>
+<JOBP state="1">
+<JobpStruct mode="design">
+<task Alias="" BranchType="0" Col="1" Lnr="1" OType="&lt;START&gt;" Object="START" ParentAlias="" ParentObject="" Row="1" Text2="">
+<checkpoint RollbackFlag="0" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="0" WElseS="1" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors/>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree/>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<task Alias="" BranchType="0" Col="2" Lnr="2" OType="JOBP" Object="PCK.AUTOMIC_TOMCAT.PUB.ACTION.UNDEPLOY_APPLICATION" ParentAlias="" ParentObject="" Row="1" Text2="">
+<checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="1" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors>
+<pre BranchType="0" Lnr="1" PreLnr="1" When="ANY_OK" type="container"/>
+</predecessors>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_BACKUP_DIRECTORY#" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_BACKUP_REPORT#" Value=""/>
+</Values>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values>
+<row ERTUsage="0" Mod="0" Name="&amp;AGENT#" Value="EXT:agent"/>
+<row ERTUsage="0" Mod="0" Name="&amp;LOGIN#" Value="EXT:@global/login"/>
+<row ERTUsage="0" Mod="0" Name="&amp;OVERWRITE_AGENT#" Value="EXT:/agent_assignment/agent"/>
+<row ERTUsage="0" Mod="0" Name="&amp;OVERWRITE_LOGIN#" Value="EXT:/agent_assignment/login"/>
+<row ERTUsage="0" Mod="0" Name="&amp;TARGET_ID#" Value="EXT:@target/system/id"/>
+</Values>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
+<node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
+<node content="1" id="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.UNDEPLOY_APPLICATION" name="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.UNDEPLOY_APPLICATION" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.UNDEPLOY_APPLICATION">
+<PRPTBOX promptset="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.UNDEPLOY_APPLICATION">
+<UC4RB_TC_APPBASEs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_APPBASE#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.UNDEPLOY_APPLICATION">EXT:/tomcat/appbase_directory</UC4RB_TC_APPBASEs.00>
+<UC4RB_TC_BASE_URLs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_BASE_URL#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.UNDEPLOY_APPLICATION">EXT:/tomcat/base_url</UC4RB_TC_BASE_URLs.00>
+<UC4RB_TC_CONTEXT_PATHs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_CONTEXT_PATH#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.UNDEPLOY_APPLICATION">EXT:/tomcat/relative_context_path</UC4RB_TC_CONTEXT_PATHs.00>
+<UC4RB_TC_FAIL_IF_NOT_DEPLOYEDs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_FAIL_IF_NOT_DEPLOYED#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.UNDEPLOY_APPLICATION">NO</UC4RB_TC_FAIL_IF_NOT_DEPLOYEDs.00>
+<UC4RB_TC_HOME_DIRs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_HOME_DIR#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.UNDEPLOY_APPLICATION">EXT:/tomcat/server/home_directory</UC4RB_TC_HOME_DIRs.00>
+<UC4RB_TC_MGR_APPs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_MGR_APP#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.UNDEPLOY_APPLICATION">manager</UC4RB_TC_MGR_APPs.00>
+<UC4RB_TC_PASSWORDs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_PASSWORD#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.UNDEPLOY_APPLICATION">EXT:/tomcat/password</UC4RB_TC_PASSWORDs.00>
+<UC4RB_TC_USERNAMEs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_USERNAME#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.UNDEPLOY_APPLICATION">EXT:/tomcat/username</UC4RB_TC_USERNAMEs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+<node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
+<PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
+<AGENTs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;AGENT#</AGENTs.00>
+<LOGINs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;LOGIN#</LOGINs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+</dyntree>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<task Alias="" BranchType="0" Col="3" Lnr="3" OType="JOBP" Object="PCK.AUTOMIC_TOMCAT.PUB.ACTION.DEPLOY_APPLICATION" ParentAlias="" ParentObject="" Row="1" Text2="">
+<checkpoint RollbackFlag="1" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="0" WElseH="1" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors>
+<pre BranchType="0" Lnr="1" PreLnr="2" When="ANY_OK" type="container"/>
+</predecessors>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_BACKUP_DIRECTORY#" Value=""/>
+<row ERTUsage="0" Mod="0" Name="&amp;UC4RB_BACKUP_REPORT#" Value=""/>
+</Values>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
+<VALUE state="2">
+<Values>
+<row ERTUsage="0" Mod="0" Name="&amp;AGENT#" Value="EXT:agent"/>
+<row ERTUsage="0" Mod="0" Name="&amp;LOGIN#" Value="EXT:@global/login"/>
+<row ERTUsage="0" Mod="0" Name="&amp;OVERWRITE_AGENT#" Value="EXT:/agent_assignment/agent"/>
+<row ERTUsage="0" Mod="0" Name="&amp;OVERWRITE_LOGIN#" Value="EXT:/agent_assignment/login"/>
+<row ERTUsage="0" Mod="0" Name="&amp;TARGET_ID#" Value="EXT:@target/system/id"/>
+</Values>
+<Mode>0</Mode>
+</VALUE>
+</node>
+<node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
+<node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
+<node content="1" id="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.DEPLOY_APPLICATION" name="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.DEPLOY_APPLICATION" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.DEPLOY_APPLICATION">
+<PRPTBOX promptset="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.DEPLOY_APPLICATION">
+<UC4RB_TC_APPBASEs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_APPBASE#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.DEPLOY_APPLICATION">EXT:/tomcat/appbase_directory</UC4RB_TC_APPBASEs.00>
+<UC4RB_TC_BASE_URLs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_BASE_URL#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.DEPLOY_APPLICATION">EXT:/tomcat/base_url</UC4RB_TC_BASE_URLs.00>
+<UC4RB_TC_CONTEXT_PATHs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_CONTEXT_PATH#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.DEPLOY_APPLICATION">EXT:/tomcat/relative_context_path</UC4RB_TC_CONTEXT_PATHs.00>
+<UC4RB_TC_FAIL_IF_DEPLOYEDs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_FAIL_IF_DEPLOYED#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.DEPLOY_APPLICATION">NO</UC4RB_TC_FAIL_IF_DEPLOYEDs.00>
+<UC4RB_TC_FARM_DEPLOYs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_FARM_DEPLOY#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.DEPLOY_APPLICATION">NO</UC4RB_TC_FARM_DEPLOYs.00>
+<UC4RB_TC_HOME_DIRs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_HOME_DIR#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.DEPLOY_APPLICATION">EXT:/tomcat/server/home_directory</UC4RB_TC_HOME_DIRs.00>
+<UC4RB_TC_MGR_APPs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_MGR_APP#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.DEPLOY_APPLICATION">manager</UC4RB_TC_MGR_APPs.00>
+<UC4RB_TC_PACKAGEs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_PACKAGE#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.DEPLOY_APPLICATION">EXT:/tomcat/package_full_path</UC4RB_TC_PACKAGEs.00>
+<UC4RB_TC_PASSWORDs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_PASSWORD#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.DEPLOY_APPLICATION">EXT:/tomcat/password</UC4RB_TC_PASSWORDs.00>
+<UC4RB_TC_UPDATEs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_UPDATE#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.DEPLOY_APPLICATION">NO</UC4RB_TC_UPDATEs.00>
+<UC4RB_TC_UPLOADs.00 ReadFromTable="JPPV" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_UPLOAD#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.DEPLOY_APPLICATION">NO</UC4RB_TC_UPLOADs.00>
+<UC4RB_TC_USERNAMEs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="UC4RB_TC_USERNAME#" promptsetname="PCK.AUTOMIC_TOMCAT.PRV.PROMPTSET.DEPLOY_APPLICATION">EXT:/tomcat/username</UC4RB_TC_USERNAMEs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+<node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
+<PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
+<AGENTs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;AGENT#</AGENTs.00>
+<LOGINs.00 ReadFromTable="JPPV" altview="1" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;LOGIN#</LOGINs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+</dyntree>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<task Alias="" BranchType="0" Col="4" Lnr="4" OType="&lt;END&gt;" Object="END" ParentAlias="" ParentObject="" Row="1" Text2="">
+<checkpoint RollbackFlag="0" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
+<after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
+<when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="1" WElseH="0" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
+<preconditions>
+<PreCon>
+<conditions id="CONDITIONS"/>
+</PreCon>
+</preconditions>
+<predecessors>
+<pre BranchType="0" Lnr="1" PreLnr="3" When="ANY_OK" type="container"/>
+</predecessors>
+<runtime MrtCancel="0" MrtDays="0" MrtErt="0" MrtExecute="0" MrtExecuteObj="" MrtFix="0" MrtMethodDate="0" MrtMethodErt="0" MrtMethodFix="0" MrtMethodNone="1" MrtOn="1" MrtTZ="" MrtTime="00:00" SrtErt="0" SrtFix="0" SrtMethodErt="0" SrtMethodFix="0" SrtMethodNone="1"/>
+<result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
+<dynvalues>
+<dyntree/>
+</dynvalues>
+<CIT/>
+<calendars CCTypeAll="0" CCTypeExt="0" CCTypeNone="0" CCTypeOne="1" CaleOn="0"/>
+<postconditions>
+<PostCon>
+<conditions id="CONDITIONS"/>
+</PostCon>
+</postconditions>
+</task>
+<OPTIONS/>
+</JobpStruct>
+</JOBP>
+<RUNTIME state="1">
+<MaxRetCode>0</MaxRetCode>
+<MrcExecute/>
+<MrcElseE>0</MrcElseE>
+<FcstStatus>0| |</FcstStatus>
+<Ert>67</Ert>
+<ErtMethodDef>1</ErtMethodDef>
+<ErtMethodFix>0</ErtMethodFix>
+<ErtFix>0</ErtFix>
+<ErtDynMethod>2|Average</ErtDynMethod>
+<ErtMethodDyn>0</ErtMethodDyn>
+<ErtCnt>0</ErtCnt>
+<ErtCorr>0</ErtCorr>
+<ErtIgn>0</ErtIgn>
+<ErtIgnFlg>0</ErtIgnFlg>
+<ErtMinCnt>0</ErtMinCnt>
+<MrtMethodNone>1</MrtMethodNone>
+<MrtMethodFix>0</MrtMethodFix>
+<MrtFix>0</MrtFix>
+<MrtMethodErt>0</MrtMethodErt>
+<MrtErt>0</MrtErt>
+<MrtMethodDate>0</MrtMethodDate>
+<MrtDays>0</MrtDays>
+<MrtTime>00:00</MrtTime>
+<MrtTZ/>
+<SrtMethodNone>1</SrtMethodNone>
+<SrtMethodFix>0</SrtMethodFix>
+<SrtFix>0</SrtFix>
+<SrtMethodErt>0</SrtMethodErt>
+<SrtErt>0</SrtErt>
+<MrtCancel>0</MrtCancel>
+<MrtExecute>0</MrtExecute>
+<MrtExecuteObj/>
+</RUNTIME>
+<DYNVALUES state="1">
+<dyntree>
+<node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
+<VALUE state="1">
+<Values>
+<row ERTUsage="0" Name="&amp;AGENT#" Value="EXT:agent"/>
+<row ERTUsage="0" Name="&amp;LOGIN#" Value="EXT:@global/login"/>
+<row ERTUsage="0" Name="&amp;OVERWRITE_AGENT#" Value="EXT:/agent_assignment/agent"/>
+<row ERTUsage="0" Name="&amp;OVERWRITE_LOGIN#" Value="EXT:/agent_assignment/login"/>
+<row ERTUsage="0" Name="&amp;TARGET_ID#" Value="EXT:@target/system/id"/>
+</Values>
+<Mode>0</Mode>
+</VALUE>
+</node>
+</dyntree>
+</DYNVALUES>
+<DEPLOYMENT state="1">
+<DeploymentFlag>1</DeploymentFlag>
+<WFTypeA>0</WFTypeA>
+<WFTypeC>1</WFTypeC>
+<AppName>UseCase</AppName>
+<WFName/>
+<ComponentName>UseCaseWebApp</ComponentName>
+</DEPLOYMENT>
+<ROLLBACK state="1">
+<RollbackFlag>0</RollbackFlag>
+<CBackupObj/>
+<CRollbackObj/>
+<FBackupPath/>
+<FDeleteBefore>0</FDeleteBefore>
+<FInclSubDirs>0</FInclSubDirs>
+</ROLLBACK>
+<SCRIPT mode="1" state="1">
+<MSCRI><![CDATA[:INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.SET_OS_FOR_COMPONENT_FLOW]]></MSCRI>
+</SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBP>
+</uc-export>
